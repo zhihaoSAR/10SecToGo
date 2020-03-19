@@ -13,24 +13,52 @@ public class Player : MonoBehaviour
     const float DASH_COOLDOWN = 0.5f; //segundos
     const float DASH_SPEED = 32;
     const float DASH_TIME = 0.1f; //segundos
+    const int MUNICION_NUM = 10;
+    const float MUNICION_COOLDOWN = 1f; //segundos
 
     public State state = State.RUN;
     public float speed = 8;
+    public float health = 1;
 
+    public Municion municion;
+
+
+    Municion[] municiones;
     Attack attack;
-    bool canAttack = true;
+    bool canAttack = true, immune = false;
     Rigidbody2D rb;
     Camera mainC;
 
 
 
+
     void Start()
     {
-        attack = new Attack(Dash);
-        rb = GetComponent<Rigidbody2D>();
         mainC = Camera.main;
+        rb = GetComponent<Rigidbody2D>();
     }
+    public void InitPlayer(Modificador mod)
+    {
+        switch(mod.Ataque)
+        {
+            case Ataque.DASH:
+                attack = new Attack(Dash);
+                break;
+            case Ataque.DISTANTIA:
+                municiones = new Municion[MUNICION_NUM];
+                for (int i = 0; i< MUNICION_NUM;i++)
+                {
+                    municiones[i] = Instantiate<Municion>(municion);
+                }
+                attack = new Attack(AtkDistantia);
+                break;
+            case Ataque.EXPLOTION:
 
+                break;
+        }
+        
+        
+    }
     void Update()
     {
         if(canAttack && Input.GetButton("Fire"))
@@ -51,7 +79,6 @@ public class Player : MonoBehaviour
             float yDir = Input.GetAxis("Vertical");
 
             Vector3 dir = (new Vector3(xDir, yDir,0)).normalized;
-            Debug.Log((dir * speed * Time.deltaTime).magnitude);
             rb.MovePosition(transform.position + dir * speed*Time.deltaTime);
         }
     }
@@ -69,7 +96,6 @@ public class Player : MonoBehaviour
         float time = 0;
         while(time < DASH_TIME)
         {
-            Debug.Log((dir * speed * Time.deltaTime).magnitude);
             rb.MovePosition(transform.position + dir * DASH_SPEED * Time.deltaTime);
             time += Time.deltaTime;
             yield return null;
@@ -77,5 +103,45 @@ public class Player : MonoBehaviour
         state = State.RUN;
         yield return new WaitForSeconds(DASH_COOLDOWN);
         canAttack = true;
+    }
+
+    void AtkDistantia(Vector3 mousePos)
+    {
+        int i;
+        Vector3 dir = (mousePos - transform.position).normalized;
+        for(i = 0;i< MUNICION_NUM;i++)
+        {
+            if(!municiones[i].gameObject.activeSelf)
+            {
+                municiones[i].initialize(dir, transform.position);
+                municiones[i].gameObject.SetActive(true);
+                break;
+            }
+        }
+        if(i < MUNICION_NUM)
+        {
+            canAttack = false;
+            StartCoroutine(Cooldown(MUNICION_COOLDOWN));
+        }
+    }
+
+    IEnumerator Cooldown(float time)
+    {
+        yield return new WaitForSeconds(time);
+        canAttack = true;
+
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(!immune && collision.collider.CompareTag("Bala"))
+        {
+            recibirDanyo();
+        }
+    }
+
+    void recibirDanyo()
+    {
+        return;
     }
 }
