@@ -10,7 +10,7 @@ public class Municion : MonoBehaviour
     float now = 0;
     Vector3 movement;
     [SerializeField]
-    float offset = 0.5f;
+    float offset = 0.1f;
     
     void Start()
     {

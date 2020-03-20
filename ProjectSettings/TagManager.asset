@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Obstacle
-  - Enemy
   - Attack_P
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,7 +17,7 @@ TagManager:
   - 
   - Player
   - Attack(Player)
-  - 
+  - Effect
   - 
   - 
   - 

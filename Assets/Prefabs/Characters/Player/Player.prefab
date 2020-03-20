@@ -100,6 +100,8 @@ MonoBehaviour:
   health: 1
   municion: {fileID: 1870919399226794153, guid: c5ddaf3649b7eb84c8e164d348da94e9,
     type: 3}
+  explosivo: {fileID: 4519382101323806575, guid: 9ae9caf429b1ae2449947a8324f2524f,
+    type: 3}
 --- !u!50 &2108093607362305744
 Rigidbody2D:
   serializedVersion: 4
@@ -134,7 +136,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05098939, y: -0.016583264}
+  m_Offset: {x: 0.007874489, y: -0.009202123}
   m_SpriteTilingProperty:
     border: {x: 0.24000001, y: 0.038000003, z: 0.238, w: 0.25}
     pivot: {x: 0.49216425, y: 0.3792509}
@@ -145,5 +147,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.70341206, y: 1.294477}
+  m_Size: {x: 0.32945323, y: 0.5128454}
   m_EdgeRadius: 0
