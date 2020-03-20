@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Enemy
+  - Attack_P
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player
+  - Attack(Player)
   - 
   - 
   - 
