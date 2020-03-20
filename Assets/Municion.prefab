@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1870919399226794153}
   m_Layer: 9
   m_Name: Municion
-  m_TagString: Untagged
+  m_TagString: Attack_P
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

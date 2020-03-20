@@ -6,10 +6,11 @@ public class SceneController : MonoBehaviour
 {
     public Player player;
 
+    public Ataque a;
     void Start()
     {
         Modificador m = new Modificador();
-        m.Ataque = Ataque.DISTANTIA;
+        m.Ataque = a;// Ataque.DISTANTIA;
 
         player.InitPlayer(m);
     }

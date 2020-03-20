@@ -98,7 +98,8 @@ MonoBehaviour:
   state: 0
   speed: 8
   health: 1
-  municion: {fileID: 0}
+  municion: {fileID: 1870919399226794153, guid: c5ddaf3649b7eb84c8e164d348da94e9,
+    type: 3}
 --- !u!50 &2085350167785343208
 Rigidbody2D:
   serializedVersion: 4
