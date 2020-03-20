@@ -13,17 +13,20 @@ public class Player : MonoBehaviour
     const float DASH_COOLDOWN = 0.5f; //segundos
     const float DASH_SPEED = 32;
     const float DASH_TIME = 0.1f; //segundos
-    const int MUNICION_NUM = 10;
+    const int MUNICION_NUM = 5;
     const float MUNICION_COOLDOWN = 1f; //segundos
+    const int EXPLOSIVO_NUM = 3;
+    const float EXPLOSIVO_COOLDOWN = 3f; //segundos
 
     public State state = State.RUN;
     public float speed = 8;
     public float health = 1;
 
     public Municion municion;
-
+    public Explosivo explosivo;
 
     Municion[] municiones;
+    Explosivo[] explosivos;
     Attack attack;
     bool canAttack = true, immune = false;
     Rigidbody2D rb;
@@ -53,7 +56,12 @@ public class Player : MonoBehaviour
                 attack = new Attack(AtkDistantia);
                 break;
             case Ataque.EXPLOTION:
-
+                explosivos = new Explosivo[EXPLOSIVO_NUM];
+                for (int i = 0; i < EXPLOSIVO_NUM; i++)
+                {
+                    explosivos[i] = Instantiate<Explosivo>(explosivo);
+                }
+                attack = new Attack(Explosive);
                 break;
         }
         
@@ -122,6 +130,25 @@ public class Player : MonoBehaviour
         {
             canAttack = false;
             StartCoroutine(Cooldown(MUNICION_COOLDOWN));
+        }
+    }
+
+    void Explosive(Vector3 mousePos)
+    {
+        int i;
+        for (i = 0; i < EXPLOSIVO_NUM; i++)
+        {
+            if (!explosivos[i].gameObject.activeSelf)
+            {
+                explosivos[i].initialize(mousePos, transform.position);
+                explosivos[i].gameObject.SetActive(true);
+                break;
+            }
+        }
+        if (i < EXPLOSIVO_NUM)
+        {
+            canAttack = false;
+            StartCoroutine(Cooldown(EXPLOSIVO_COOLDOWN));
         }
     }
 
