@@ -91,10 +91,19 @@ public class Player : MonoBehaviour
             Vector3 dir = (new Vector3(xDir, yDir,0)).normalized;
             rb.MovePosition(transform.position + dir * speed*Time.deltaTime);
 
+            //Animación x y
             anim.SetFloat("speed", Mathf.Abs(xDir));
-            if(!Mathf.Approximately(deltaX, 0f)){
+            if(!Mathf.Approximately(xDir, 0f)){
                 transform.localScale = new Vector3(Mathf.Sign(xDir), 1f, 1f);
+                
             }
+            
+            
+            if(!Mathf.Approximately(yDir, 0f)){
+                transform.localScale = new Vector3(Mathf.Sign(yDir), 1f, 1f);
+                anim.SetFloat("speed", Mathf.Abs(yDir));
+            }
+            //Fin animación x y
         }
     }
     void Dash(Vector3 mousePos)
