@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     bool canAttack = true, immune = false;
     Rigidbody2D rb;
     Camera mainC;
-
+    private Animator anim;
 
 
 
@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     {
         mainC = Camera.main;
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
     public void InitPlayer(Modificador mod)
     {
@@ -75,8 +76,9 @@ public class Player : MonoBehaviour
             Vector3 mousePos = mainC.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0;
             attack(mousePos);
-            
+
         }
+
     }
 
     void FixedUpdate()
@@ -88,6 +90,11 @@ public class Player : MonoBehaviour
 
             Vector3 dir = (new Vector3(xDir, yDir,0)).normalized;
             rb.MovePosition(transform.position + dir * speed*Time.deltaTime);
+
+            anim.SetFloat("speed", Mathf.Abs(xDir));
+            if(!Mathf.Approximately(deltaX, 0f)){
+                transform.localScale = new Vector3(Mathf.Sign(xDir), 1f, 1f);
+            }
         }
     }
     void Dash(Vector3 mousePos)
