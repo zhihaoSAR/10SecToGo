@@ -75,6 +75,9 @@ public class Player : MonoBehaviour
             
             Vector3 mousePos = mainC.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0;
+            Vector3 flip = (mousePos - transform.position);
+            transform.localScale = new Vector3(Mathf.Sign(flip.x), 1f, 1f);
+            anim.SetTrigger("attack");
             attack(mousePos);
 
         }
@@ -106,8 +109,7 @@ public class Player : MonoBehaviour
         state = State.DASH;
         canAttack = false;
         Vector3 dir = (mousePos - transform.position).normalized;
-        transform.localScale = new Vector3(Mathf.Sign(dir.x), 1f, 1f);
-        anim.SetTrigger("attack");
+        
 
         StartCoroutine(Dashing(dir));
 

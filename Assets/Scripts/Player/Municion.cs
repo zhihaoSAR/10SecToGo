@@ -5,7 +5,7 @@ using UnityEngine;
 public class Municion : MonoBehaviour
 {
     Vector3 direction;
-    public float speed =10;
+    public float speed =8;
     public const float vida = 3; //segundos
     float now = 0;
     Vector3 movement;
