@@ -54,7 +54,6 @@ public class SceneController : MonoBehaviour
     }
     public void EnemyDead()
     {
-        Debug.Log(enemiesDead);
         if (++enemiesDead == enemyNum)
         {
             if(++round > config.MaxRound)
@@ -63,6 +62,7 @@ public class SceneController : MonoBehaviour
             }
             else
             {
+                Debug.Log("Ronda: " + round);
                 NextRound();
             }
         }
