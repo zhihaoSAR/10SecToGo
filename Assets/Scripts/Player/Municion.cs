@@ -29,7 +29,7 @@ public class Municion : MonoBehaviour
             now += Time.deltaTime;
         }
     }
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         gameObject.SetActive(false);
     }

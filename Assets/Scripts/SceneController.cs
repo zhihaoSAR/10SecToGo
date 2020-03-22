@@ -19,7 +19,6 @@ public class SceneController : MonoBehaviour
     int enemiesDead;
     float[] probability;
     int enemyNum;
-    bool roundFinish = false;
 
     float time;
 
@@ -50,18 +49,50 @@ public class SceneController : MonoBehaviour
         if(time <= 0)
         {
             //Debug.Log("Game Over");
+            //Debug.Log(time);
         }
     }
+    public void EnemyDead()
+    {
+        Debug.Log(enemiesDead);
+        if (++enemiesDead == enemyNum)
+        {
+            if(++round > config.MaxRound)
+            {
+                Debug.Log("Win");
+            }
+            else
+            {
+                NextRound();
+            }
+        }
 
+    }
+    void NextRound()
+    {
+        time = 10;
+        enemiesDead = 0;
+        enemiesSpawned = 0;
+        time = 10;
+        enemyNum += config.DeltaEnemies;
+        float cantidad = probability[0] - config.DeltaProbability[0] < config.MinProbability ? probability[0] - config.MinProbability : config.DeltaProbability[0];
+        probability[0] -= cantidad;
+        for (int i = 1; i< probability.Length;i++)
+        {
+            probability[i] += cantidad * config.DeltaProbability[i];
+        }
+        StartCoroutine("Spawn");
+        
+    }
 
     IEnumerator Spawn()
     {
-        while(!roundFinish)
+        while(enemiesSpawned < enemyNum)
         {
-            int spawnNum = UnityEngine.Random.Range(0, Math.Min((enemyNum - enemiesSpawned), config.MaxEnemieNumAtTime));
+            int spawnNum = UnityEngine.Random.Range(0, Math.Min((enemyNum - enemiesSpawned), config.MaxEnemieNumAtTime - enemiesSpawned + enemiesDead)+1);
             for(int i =0;i<spawnNum;i++)
             {
-                Vector3 spawnPos =SpawnPoints[UnityEngine.Random.Range(0, SpawnPoints.Length-1)].position;
+                Vector3 spawnPos =SpawnPoints[UnityEngine.Random.Range(0, SpawnPoints.Length)].position;
                 float p = UnityEngine.Random.Range(1, 100);
                 int enemyInd;
                 for(enemyInd = 0; enemyInd < config.Enemies.Length; enemyInd++)
