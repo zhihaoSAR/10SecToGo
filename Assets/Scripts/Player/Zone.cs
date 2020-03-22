@@ -22,7 +22,7 @@ public class Zone : MonoBehaviour
         gameObject.SetActive(false);
         
     }
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
 
     }

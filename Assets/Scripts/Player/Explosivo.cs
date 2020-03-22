@@ -44,10 +44,6 @@ public class Explosivo : MonoBehaviour
         }
             
     }
-    void OnCollisionEnter(Collision collision)
-    {
-        gameObject.SetActive(false);
-    }
     public void initialize(Vector3 dst, Vector3 pos)
     {
         startPosition = pos + (dst-pos).normalized*offset;

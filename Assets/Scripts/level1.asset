@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d74221f666090448eadf693ec1a675, type: 3}
+  m_Name: level1
+  m_EditorClassIdentifier: 
+  MaxRound: 20
+  Enemies:
+  - {fileID: -1692153137168407917, guid: b7e2f7f88ceb905479b6a366d2acee06, type: 3}
+  - {fileID: -5398277778082941386, guid: 6b519396f3d1a87488f71b15ce1eb378, type: 3}
+  InitProbability:
+  - 70
+  - 30
+  MinProbability: 40
+  DeltaProbability:
+  - 10
+  - 1
+  MaxEnemieNumAtTime: 10
+  InitEnemyNum: 20
+  DeltaEnemies: 2
+  SpawnTime: 0.5

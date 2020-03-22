@@ -174,12 +174,13 @@ public class Player : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
+        /*
         if(!immune && collision.collider.CompareTag("Bala"))
         {
             recibirDanyo();
-        }
+        }*/
     }
 
     void recibirDanyo()
