@@ -33,7 +33,7 @@ public class Scientist : MonoBehaviour
 
     IEnumerator Flee()
     {
-        Debug.Log("State: Flee");
+        //Debug.Log("State: Flee");
         float remainingDistance = (transform.position - endPosition).sqrMagnitude;
         while (remainingDistance > float.Epsilon)
         {
@@ -54,7 +54,7 @@ public class Scientist : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("triggerEnter");
+        //Debug.Log("triggerEnter");
         if (other.CompareTag("Player"))
         {
             enemyTransform = other.transform;
@@ -69,7 +69,7 @@ public class Scientist : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("triggerExit");
+        //Debug.Log("triggerExit");
         if (other.CompareTag("Player"))
         {
             if (moveCoroutine != null)

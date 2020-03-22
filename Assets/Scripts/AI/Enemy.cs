@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public SceneController controller;
+    void death()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(gameObject);
     }
 }

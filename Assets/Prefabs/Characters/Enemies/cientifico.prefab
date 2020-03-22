@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6033554251695127553}
   - component: {fileID: 6033554251695127552}
   - component: {fileID: 6033554251695127556}
+  - component: {fileID: -1692153137168407917}
   m_Layer: 0
   m_Name: cientifico
   m_TagString: Enemy
@@ -133,3 +134,16 @@ CircleCollider2D:
   m_Offset: {x: 0.019916177, y: 0}
   serializedVersion: 2
   m_Radius: 1.4620928
+--- !u!114 &-1692153137168407917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6033554251695127567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe49f1f0be2804e4e8b9e0bbaf77da3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

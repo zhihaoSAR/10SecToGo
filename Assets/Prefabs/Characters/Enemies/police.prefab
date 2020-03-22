@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8120976243508212178}
   - component: {fileID: 8120976243508212205}
   - component: {fileID: 8120976243508212206}
+  - component: {fileID: -5398277778082941386}
   m_Layer: 0
   m_Name: police
   m_TagString: Enemy
@@ -135,3 +136,16 @@ MonoBehaviour:
   bullet: {fileID: 8684013684223882394, guid: 9fb23b5d10464e540850bbbcbae88c1c, type: 3}
   shootTime: 1
   Speed: 1
+--- !u!114 &-5398277778082941386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120976243508212177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe49f1f0be2804e4e8b9e0bbaf77da3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

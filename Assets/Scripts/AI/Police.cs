@@ -39,7 +39,7 @@ public class Police : MonoBehaviour
 
     IEnumerator Chase()
     {
-        Debug.Log("State: Chase");
+        //Debug.Log("State: Chase");
         float remainingDistance = (transform.position - endPosition).sqrMagnitude;
         while (remainingDistance > float.Epsilon)
         {
@@ -51,7 +51,7 @@ public class Police : MonoBehaviour
 
     IEnumerator Flee()
     {
-        Debug.Log("State: Flee");
+        //Debug.Log("State: Flee");
         float remainingDistance = (transform.position - endPosition).sqrMagnitude;
         while (remainingDistance > float.Epsilon)
         {
@@ -63,7 +63,7 @@ public class Police : MonoBehaviour
 
     IEnumerator Shoot()
     {
-        Debug.Log(timeFromLastShot);
+        //Debug.Log(timeFromLastShot);
         if (timeFromLastShot > shootTime)
         {
             Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
@@ -82,7 +82,7 @@ public class Police : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("triggerEnter");
+        //Debug.Log("triggerEnter");
         if (other.CompareTag("Player"))
         {
             enemyTransform = other.transform;
@@ -99,7 +99,7 @@ public class Police : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("triggerExit");
+        //Debug.Log("triggerExit");
         if (other.CompareTag("Player"))
         {
             if (moveCoroutine != null)
