@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
             rb.MovePosition(transform.position + dir * speed*Time.deltaTime);
 
             anim.SetFloat("speed", Mathf.Abs(xDir));
-            if(!Mathf.Approximately(deltaX, 0f)){
+            if(!Mathf.Approximately(xDir, 0f)){
                 transform.localScale = new Vector3(Mathf.Sign(xDir), 1f, 1f);
             }
         }
