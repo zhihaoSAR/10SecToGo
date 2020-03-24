@@ -82,7 +82,7 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
-        if(canAttack && Input.GetButton("Fire"))
+        if(state != State.DEAD && canAttack && Input.GetButton("Fire"))
         {
             
             Vector3 mousePos = mainC.ScreenToWorldPoint(Input.mousePosition);
