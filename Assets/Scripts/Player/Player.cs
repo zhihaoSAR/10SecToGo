@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private delegate void Attack(Vector3 mousePos);
 
     const float DASH_COOLDOWN = 0.5f; //segundos
-    const float DASH_SPEED = 32;
+    const float DASH_SPEED = 15;
     const float DASH_TIME = 0.1f; //segundos
     const int MUNICION_NUM = 5;
     const float MUNICION_COOLDOWN = 1f; //segundos
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     const float EXPLOSIVO_COOLDOWN = 3f; //segundos
 
     public State state = State.RUN;
-    public float speed = 8;
+    public float speed = 5;
     public float health = 1;
 
     public Municion municion;
@@ -75,6 +75,9 @@ public class Player : MonoBehaviour
             
             Vector3 mousePos = mainC.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0;
+            Vector3 flip = (mousePos - transform.position);
+            transform.localScale = new Vector3(Mathf.Sign(flip.x), 1f, 1f);
+            anim.SetTrigger("attack");
             attack(mousePos);
 
         }
@@ -91,10 +94,16 @@ public class Player : MonoBehaviour
             Vector3 dir = (new Vector3(xDir, yDir,0)).normalized;
             rb.MovePosition(transform.position + dir * speed*Time.deltaTime);
 
-            anim.SetFloat("speed", Mathf.Abs(xDir));
+
+            //Animación x y
+            anim.SetFloat("speed", Mathf.Abs(xDir)+Mathf.Abs(yDir));
+
             if(!Mathf.Approximately(xDir, 0f)){
                 transform.localScale = new Vector3(Mathf.Sign(xDir), 1f, 1f);
+                
             }
+            
+            //Fin animación x y
         }
     }
     void Dash(Vector3 mousePos)
@@ -103,6 +112,7 @@ public class Player : MonoBehaviour
         canAttack = false;
         Vector3 dir = (mousePos - transform.position).normalized;
         
+
         StartCoroutine(Dashing(dir));
 
     }
@@ -166,16 +176,20 @@ public class Player : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
+        /*
         if(!immune && collision.collider.CompareTag("Bala"))
         {
             recibirDanyo();
-        }
+        }*/
     }
 
     void recibirDanyo()
     {
-        return;
+        if(--health< 0)
+        {
+            anim.SetTrigger("death");
+        }
     }
 }

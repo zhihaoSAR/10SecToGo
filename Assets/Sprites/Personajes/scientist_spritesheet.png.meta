@@ -1,7 +1,163 @@
 fileFormatVersion: 2
 guid: 3d6da2960b8aa49fb93c87182d008fe2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4874523566863903412
+    second: scientist_walk1
+  - first:
+      213: 6804446609732172388
+    second: scientist_walk2
+  - first:
+      213: -7636266653075077200
+    second: scientist_walk3
+  - first:
+      213: -5044448230769299417
+    second: scientist_walk4
+  - first:
+      213: 6866837013589169433
+    second: scientist_walk5
+  - first:
+      213: -5086287540945720144
+    second: scientist_walk6
+  - first:
+      213: -2465327289134105716
+    second: scientist_walk7
+  - first:
+      213: 3170346815153002983
+    second: scientist_walk8
+  - first:
+      213: 8950950280346035312
+    second: scientist_death1
+  - first:
+      213: 2182610492912128367
+    second: scientist_idle1
+  - first:
+      213: 7207081505579955569
+    second: scientist_idle2
+  - first:
+      213: 7570813169422967496
+    second: scientist_spritesheet_11
+  - first:
+      213: -2210471859458369880
+    second: scientist_idle3
+  - first:
+      213: 4241058540582492088
+    second: scientist_spritesheet_13
+  - first:
+      213: 5949189611143810758
+    second: scientist_idle4
+  - first:
+      213: -3597877270041306102
+    second: scientist_idle5
+  - first:
+      213: -8831668147244171373
+    second: scientist_spritesheet_16
+  - first:
+      213: 6673839616374473857
+    second: scientist_idle6
+  - first:
+      213: 3036014399695425542
+    second: scientist_idle7
+  - first:
+      213: 4893718062078189237
+    second: scientist_idle8
+  - first:
+      213: -7516052149723175252
+    second: scientist_death2
+  - first:
+      213: -1926923449435774315
+    second: scientist_spritesheet_21
+  - first:
+      213: 4795783179418843826
+    second: scientist_spritesheet_22
+  - first:
+      213: 1562197657789938415
+    second: scientist_spritesheet_23
+  - first:
+      213: -8681053338564178825
+    second: scientist_death3
+  - first:
+      213: 616452222738743530
+    second: scientist_spritesheet_25
+  - first:
+      213: -5922301682773073948
+    second: scientist_death4
+  - first:
+      213: 8019050178053635101
+    second: scientist_spritesheet_27
+  - first:
+      213: 8436796589076119710
+    second: scientist_death5
+  - first:
+      213: 1070896564121766534
+    second: scientist_spritesheet_29
+  - first:
+      213: -7312463513542245186
+    second: scientist_spritesheet_30
+  - first:
+      213: -3367332376935980617
+    second: scientist_spritesheet_31
+  - first:
+      213: -622551325517845551
+    second: scientist_spritesheet_32
+  - first:
+      213: -572049857150022568
+    second: scientist_death9
+  - first:
+      213: 7664939313139210820
+    second: scientist_spritesheet_34
+  - first:
+      213: 376350819146128066
+    second: scientist_death10
+  - first:
+      213: 7186562320013269137
+    second: scientist_spritesheet_36
+  - first:
+      213: -7669008244229520952
+    second: scientist_spritesheet_37
+  - first:
+      213: -7437439687576856
+    second: scientist_death11
+  - first:
+      213: 7001886738075605654
+    second: scientist_spritesheet_39
+  - first:
+      213: 7716831489351702317
+    second: scientist_spritesheet_40
+  - first:
+      213: -7153989705803373649
+    second: scientist_spritesheet_41
+  - first:
+      213: 1785212760550896637
+    second: scientist_death8
+  - first:
+      213: -1293871436554017080
+    second: scientist_spritesheet_43
+  - first:
+      213: 3702794966187759278
+    second: scientist_spritesheet_44
+  - first:
+      213: 8916665015150030710
+    second: scientist_death6
+  - first:
+      213: 6986446847286846145
+    second: scientist_spritesheet_46
+  - first:
+      213: 4096693641444593657
+    second: scientist_spritesheet_47
+  - first:
+      213: -501058918547243792
+    second: scientist_spritesheet_48
+  - first:
+      213: 1659293580244188798
+    second: scientist_spritesheet_49
+  - first:
+      213: -6883315466112962202
+    second: scientist_spritesheet_50
+  - first:
+      213: -4628683695451397095
+    second: scientist_spritesheet_51
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +187,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +196,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +226,609 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: scientist_walk1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 219
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0537e898e16bf4f87b3af3e082e5a7dd
+      internalID: -4874523566863903412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_walk2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 219
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a4dad2000794c5ebc767a66fed29d1
+      internalID: 6804446609732172388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_walk3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 219
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3c975767b024fea8d6f502e3911adc
+      internalID: -7636266653075077200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_walk4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 219
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666f2e8af113d48f483e8ea68dc33927
+      internalID: -5044448230769299417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_walk5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 219
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50e6d292db3844f5b95b1bb8eb5d0ba
+      internalID: 6866837013589169433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_walk6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 219
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bfe7357b181407faf5e483af9bed0f
+      internalID: -5086287540945720144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_walk7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 219
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fe68170575b4cc880776be682e9031
+      internalID: -2465327289134105716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_walk8
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 219
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c08a247e8f744b6afcb591983c64d0
+      internalID: 3170346815153002983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 82
+        width: 34
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88271bcf9ad3945bea9e0b6d7e50a355
+      internalID: 8950950280346035312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_idle1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 157
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bb68290b7ba40208400c8571ae743c
+      internalID: 2182610492912128367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_idle2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 157
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b693701573b74666a177ecd17c6af4d
+      internalID: 7207081505579955569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_idle3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 157
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bf8746bc7124e3ca9b06dbe6c6af30
+      internalID: -2210471859458369880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_idle4
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 157
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdb06a025ac64e709c3d986abb3f760
+      internalID: 5949189611143810758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_idle5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 157
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbbd742ff30041dd8750b7c91e57eb2
+      internalID: -3597877270041306102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_idle6
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 157
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3b690c2e13e4f73b05da5adea6f3be
+      internalID: 6673839616374473857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_idle7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 156
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd77284ece5354781920538b13b8592a
+      internalID: 3036014399695425542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_idle8
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 156
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33c4b755382b429dae8e553a06f32e7
+      internalID: 4893718062078189237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 83
+        width: 35
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34753ef86c134eb1ba486b6f01f03dc
+      internalID: -7516052149723175252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 128
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c45c57675914e9ea5485673b13f5d9
+      internalID: -1926923449435774315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 82
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517cc44b9041945d78003fe1b9e1eabe
+      internalID: -8681053338564178825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 80
+        width: 79
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81b7dc66273b4f01afdf8c8de9738fc
+      internalID: -5922301682773073948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 82
+        width: 90
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3546ed2fe86d4a20ab6b0fb2fb9a7a2
+      internalID: 8436796589076119710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death9
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 40
+        width: 111
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9490c41ffc14c4ca2e4aa292075cf0
+      internalID: -572049857150022568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death10
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 51
+        width: 110
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdb890d86d7641a3bbd3a8f5b75dce8
+      internalID: 376350819146128066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death11
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 50
+        width: 111
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709128f429f1141a89071d41225cd5c6
+      internalID: -7437439687576856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death8
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 27
+        width: 104
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20432c73ed16a4e169b4dbddbea5d331
+      internalID: 1785212760550896637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_death6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 13
+        width: 97
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6faaf52f2e2e042fc861486318404782
+      internalID: 8916665015150030710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 19
+        width: 102
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e447f9f952148ad8873de3847488bf
+      internalID: -501058918547243792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -1,7 +1,130 @@
 fileFormatVersion: 2
 guid: 1947cac16bfa24094a35cd8eebdf1b35
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1698348151989071853
+    second: cop_shoot1
+  - first:
+      213: -1446023454231706547
+    second: cop_shoot2
+  - first:
+      213: 6720809866117232414
+    second: cop_shoot3
+  - first:
+      213: 2032471515705764777
+    second: cop_shoot4
+  - first:
+      213: 903733922872822858
+    second: cop_shoot5
+  - first:
+      213: 1621071000237924661
+    second: cop_shoot6
+  - first:
+      213: 6714566588540340236
+    second: cop_shoot7
+  - first:
+      213: -132275738895788954
+    second: cop_shoot8
+  - first:
+      213: -6097924286523867787
+    second: cop_shoot9
+  - first:
+      213: -962997989856447706
+    second: cop_shoot10
+  - first:
+      213: -2985300872336915166
+    second: cop_reload1
+  - first:
+      213: 4158607179960276467
+    second: cop_reload2
+  - first:
+      213: -8882754943620773818
+    second: cop_reload3
+  - first:
+      213: 1815026149809988860
+    second: cop_reload4
+  - first:
+      213: -5938069744468799699
+    second: cop_reload5
+  - first:
+      213: 281107234228272021
+    second: cop_reload6
+  - first:
+      213: 934886279052973032
+    second: cop_reload7
+  - first:
+      213: 6048371582784775119
+    second: cop_reload8
+  - first:
+      213: 225080990284315553
+    second: cop_reload9
+  - first:
+      213: -3311235602216102233
+    second: cop_walk1
+  - first:
+      213: 6529760493308742451
+    second: cop_walk2
+  - first:
+      213: -9192555831410202319
+    second: cop_walk3
+  - first:
+      213: -4741467187140943730
+    second: cop_walk4
+  - first:
+      213: 300935869694658771
+    second: cop_walk5
+  - first:
+      213: -7157901748763689673
+    second: cop_walk6
+  - first:
+      213: 577053888105910521
+    second: cop_walk7
+  - first:
+      213: -1622962501322909345
+    second: cop_walk8
+  - first:
+      213: -7408681782762292377
+    second: cop_idle1
+  - first:
+      213: -8046966519501051938
+    second: cop_idle2
+  - first:
+      213: 1141674180923087962
+    second: cop_idle3
+  - first:
+      213: 5628243372022592871
+    second: cop_idle4
+  - first:
+      213: 7787844685173268225
+    second: cop_idle5
+  - first:
+      213: 3251223794579809890
+    second: cop_idle6
+  - first:
+      213: 8737057153043937179
+    second: cop_spritesheet_36
+  - first:
+      213: 431533588604021115
+    second: cop_death1
+  - first:
+      213: -1835744544450290174
+    second: cop_death2
+  - first:
+      213: -7306672931588445250
+    second: cop_death3
+  - first:
+      213: 494224039488623087
+    second: cop_death4
+  - first:
+      213: 3738872497006696942
+    second: cop_death5
+  - first:
+      213: -7301864465020039185
+    second: cop_death6
+  - first:
+      213: 8096985145878331753
+    second: cop_death7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +163,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +193,882 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cop_shoot1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 297
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e5d2be77bcd48ba9a307e4ab56fbca
+      internalID: -1698348151989071853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_shoot2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 297
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b9e8d74ee29489c9fac8a070ab4066
+      internalID: -1446023454231706547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_shoot3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 297
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce0f37a025964fd69423943d5ac2c5d
+      internalID: 6720809866117232414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_shoot4
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 297
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0d8b0dd9d514c07948c3ed5193084f
+      internalID: 2032471515705764777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_shoot5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 297
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce6cfdb6f3664d87a2743310b167de9
+      internalID: 903733922872822858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_shoot6
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 297
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a824d7bc15404385852749de61b2128
+      internalID: 1621071000237924661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_shoot7
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 298
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918ee9ee5d9794981a8932b12706d753
+      internalID: 6714566588540340236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_shoot8
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 297
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629e7fe7da0364784b5ac86a478d712c
+      internalID: -132275738895788954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_shoot9
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 297
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a894dd0b2ba0b4275aef6039d3c38908
+      internalID: -6097924286523867787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_shoot10
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 297
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1131c54f53cf641e39bf8ab162a39c68
+      internalID: -962997989856447706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_reload1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 230
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbc8f925840c48c3a51e388bd501306
+      internalID: -2985300872336915166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_reload2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 232
+        width: 27
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aeeb3c588dac45f48b5cccd06c68b46
+      internalID: 4158607179960276467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_reload3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 232
+        width: 25
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e19dbae19d445a88ef556293a3c47d
+      internalID: -8882754943620773818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_reload4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 232
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15847df5ea05426ebead2c42c350882
+      internalID: 1815026149809988860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_reload5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 232
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b56b5a8af4e4bd283c1f86df4d433c
+      internalID: -5938069744468799699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_reload6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 232
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f8d702e385d4ca190a65c7b40971c3
+      internalID: 281107234228272021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_reload7
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 230
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6478ff7937f9b437c98ea80de7416284
+      internalID: 934886279052973032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_reload8
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 229
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d90ffe32d31f465686444faa363764a
+      internalID: 6048371582784775119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_reload9
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 229
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4bc62790c8e4c0e8e12ec5ee9d416a
+      internalID: 225080990284315553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_walk1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 161
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6d2fda2cb13444cafb109cc10ee79c
+      internalID: -3311235602216102233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_walk2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 161
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1f5990f6e64403782b661e3351f476
+      internalID: 6529760493308742451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_walk3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 161
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46d3de35fa984a7bb154dc2e9bccca0
+      internalID: -9192555831410202319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_walk4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 161
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d70bc03e8ecc44948d6f75a6a8017d5
+      internalID: -4741467187140943730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_walk5
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 161
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b4902bb000741c8a3c104483d955b4
+      internalID: 300935869694658771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_walk6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 161
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a510e919eabb742d8b74d4d8105b26bc
+      internalID: -7157901748763689673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_walk7
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 161
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a850940faeb0d41a98a6e7a34a2f338a
+      internalID: 577053888105910521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_walk8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 161
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2268637748bae4e2899b48e6a7adfbf8
+      internalID: -1622962501322909345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_idle1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 92
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118feb515614641bcb218bf69105c256
+      internalID: -7408681782762292377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_idle2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 92
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ad9030e590a496b81bd505fbaa3bf4
+      internalID: -8046966519501051938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_idle3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 92
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723aa0e8a749140e8b5efbe1b59f12b2
+      internalID: 1141674180923087962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_idle4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 92
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37286b453e3404b7c8a70be17c32a22b
+      internalID: 5628243372022592871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_idle5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 92
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff7b76777b504a3fbd59027904f1585
+      internalID: 7787844685173268225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_idle6
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 92
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11190f8cfe7b64c0693ed859b07b5961
+      internalID: 3251223794579809890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 72
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efb8261de6ff4b9ea68d1159e2cfa10
+      internalID: 8737057153043937179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_death1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 21
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b8052c82625408eb52145e6c454337
+      internalID: 431533588604021115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_death2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 30
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3f5506c35e74f9e9bb10938b90dbbd
+      internalID: -1835744544450290174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_death3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 38
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3081c12cffb04698a67d98c31c0d6f6
+      internalID: -7306672931588445250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_death4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 50
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac4e95602e554a5eab56b64fdb289b8
+      internalID: 494224039488623087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_death5
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 53
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770fa984b35c0438093335ce0e77db78
+      internalID: 3738872497006696942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_death6
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 53
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7078e0414068543e9a76a05656fffe29
+      internalID: -7301864465020039185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cop_death7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 53
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b096ae97437e848f0aa0d07d3e47c1e5
+      internalID: 8096985145878331753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

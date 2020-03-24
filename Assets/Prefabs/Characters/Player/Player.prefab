@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2108093607362305748}
   - component: {fileID: 2108093607362305744}
   - component: {fileID: 2108093607362305747}
+  - component: {fileID: 1512983997}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  speed: 8
+  speed: 5
   health: 1
   municion: {fileID: 1870919399226794153, guid: c5ddaf3649b7eb84c8e164d348da94e9,
     type: 3}
@@ -149,3 +150,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32945323, y: 0.5128454}
   m_EdgeRadius: 0
+--- !u!95 &1512983997
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108093607362305751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2af4f37bd7d604efbab8e306b53c2c1f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
