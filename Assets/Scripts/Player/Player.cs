@@ -17,19 +17,28 @@ public class Player : MonoBehaviour
     const float MUNICION_COOLDOWN = 1f; //segundos
     const int EXPLOSIVO_NUM = 3;
     const float EXPLOSIVO_COOLDOWN = 3f; //segundos
+    const float IMMUNE_TIME = 1f;
+    const float EFFECT_TIME = 0.1f;
 
-    public State state = State.RUN;
     public float speed = 5;
     public float health = 1;
+    public float damage = 1;
+
+    [HideInInspector]
+    public State state = State.RUN;
+    [HideInInspector]
+    public bool attacking = false;
 
     public Municion municion;
     public Explosivo explosivo;
+
 
     Municion[] municiones;
     Explosivo[] explosivos;
     Attack attack;
     bool canAttack = true, immune = false;
     Rigidbody2D rb;
+    SpriteRenderer sprite;
     Camera mainC;
     private Animator anim;
 
@@ -40,6 +49,7 @@ public class Player : MonoBehaviour
         mainC = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
     public void InitPlayer(Modificador mod)
     {
@@ -110,6 +120,7 @@ public class Player : MonoBehaviour
     {
         state = State.DASH;
         canAttack = false;
+        attacking = true;
         Vector3 dir = (mousePos - transform.position).normalized;
         
 
@@ -121,13 +132,13 @@ public class Player : MonoBehaviour
         float time = 0;
         while(time < DASH_TIME)
         {
-            rb.MovePosition(transform.position + dir * DASH_SPEED * Time.deltaTime);
+            transform.Translate(dir * DASH_SPEED * Time.deltaTime);
             time += Time.deltaTime;
             yield return null;
         }
+        attacking = false;
         state = State.RUN;
-        yield return new WaitForSeconds(DASH_COOLDOWN);
-        canAttack = true;
+        StartCoroutine(Cooldown(DASH_COOLDOWN));
     }
 
     void AtkDistantia(Vector3 mousePos)
@@ -178,18 +189,45 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        /*
-        if(!immune && collision.collider.CompareTag("Bala"))
+        if (attacking)
         {
-            recibirDanyo();
-        }*/
+            if (collision.collider.CompareTag("Enemy"))
+            {
+                collision.collider.GetComponent<Enemy>().receiveDamage();
+            }
+        }
     }
 
-    void recibirDanyo()
+
+    public void receiveDamage()
     {
-        if(--health< 0)
+        if(!immune)
         {
-            anim.SetTrigger("death");
+            if (--health > 0)
+            {
+                immune = true;
+                sprite.color = Color.red;
+                StartCoroutine("resetDamegeEffect");
+                StartCoroutine("resetImmune");
+            }
+            else
+            {
+                state = State.DEAD;
+                immune = true;
+                anim.SetTrigger("death");
+            }
         }
+        
+    }
+    IEnumerator resetImmune()
+    {
+        yield return new WaitForSeconds(IMMUNE_TIME);
+        immune = false;
+    }
+
+    IEnumerator resetDamegeEffect()
+    {
+        yield return new WaitForSeconds(EFFECT_TIME);
+        sprite.color = Color.white;
     }
 }

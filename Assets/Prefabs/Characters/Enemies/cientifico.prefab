@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6033554251695127552}
   - component: {fileID: 6033554251695127556}
   - component: {fileID: -1692153137168407917}
-  - component: {fileID: -3854636170411719125}
+  - component: {fileID: 5703382837871878180}
   m_Layer: 0
   m_Name: cientifico
   m_TagString: Enemy
@@ -148,7 +148,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
---- !u!61 &-3854636170411719125
+  playerDamage: 0
+  health: 1
+  immuneTime: 0.5
+  effectTime: 0.1
+--- !u!61 &5703382837871878180
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

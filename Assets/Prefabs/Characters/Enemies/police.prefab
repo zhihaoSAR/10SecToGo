@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8120976243508212205}
   - component: {fileID: 8120976243508212206}
   - component: {fileID: -5398277778082941386}
-  - component: {fileID: 2556709767256548774}
+  - component: {fileID: 1795000183491257815}
   m_Layer: 0
   m_Name: police
   m_TagString: Enemy
@@ -150,7 +150,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
---- !u!61 &2556709767256548774
+  playerDamage: 0
+  health: 2
+  immuneTime: 0.5
+  effectTime: 0.1
+--- !u!61 &1795000183491257815
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
