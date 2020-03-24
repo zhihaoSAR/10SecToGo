@@ -18,8 +18,8 @@ TagManager:
   - Player
   - Attack(Player)
   - Effect
-  - 
-  - 
+  - Tilemap_base
+  - Tilemap_objects
   - 
   - 
   - 
@@ -42,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Map
+    uniqueID: 2138096865
+    locked: 0
+  - name: Object
+    uniqueID: 1581193111
+    locked: 0
+  - name: Decor
+    uniqueID: 2501063485
+    locked: 0
+  - name: Characters
+    uniqueID: 162353495
     locked: 0
