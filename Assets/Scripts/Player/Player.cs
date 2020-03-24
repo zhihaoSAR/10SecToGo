@@ -28,9 +28,11 @@ public class Player : MonoBehaviour
     public State state = State.RUN;
     [HideInInspector]
     public bool attacking = false;
+    
 
     public Municion municion;
     public Explosivo explosivo;
+    
 
 
     Municion[] municiones;
@@ -91,7 +93,10 @@ public class Player : MonoBehaviour
             attack(mousePos);
 
         }
-
+        if(Input.GetKey(KeyCode.C))
+        {
+            health = 999;
+        }
     }
 
     void FixedUpdate()
@@ -118,6 +123,7 @@ public class Player : MonoBehaviour
     }
     void Dash(Vector3 mousePos)
     {
+        immune = true;
         state = State.DASH;
         canAttack = false;
         attacking = true;
@@ -132,11 +138,12 @@ public class Player : MonoBehaviour
         float time = 0;
         while(time < DASH_TIME)
         {
-            transform.Translate(dir * DASH_SPEED * Time.deltaTime);
+            rb.MovePosition(transform.position+ dir * DASH_SPEED * Time.deltaTime);
             time += Time.deltaTime;
             yield return null;
         }
         attacking = false;
+        immune = false;
         state = State.RUN;
         StartCoroutine(Cooldown(DASH_COOLDOWN));
     }
@@ -187,7 +194,7 @@ public class Player : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
         if (attacking)
         {
@@ -214,6 +221,7 @@ public class Player : MonoBehaviour
             {
                 state = State.DEAD;
                 immune = true;
+                canAttack = false;
                 anim.SetTrigger("death");
             }
         }
