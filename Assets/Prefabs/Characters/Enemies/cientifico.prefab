@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6033554251695127556}
   - component: {fileID: -1692153137168407917}
   - component: {fileID: 5703382837871878180}
+  - component: {fileID: 8379701469744886026}
   m_Layer: 0
   m_Name: cientifico
   m_TagString: Enemy
@@ -97,7 +98,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b481b7fec662244f8147bb5b68613a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1
+  directionChangeInterval: 1
+  speed: 1
+  patroltime: 1
 --- !u!50 &6033554251695127552
 Rigidbody2D:
   serializedVersion: 4
@@ -178,3 +181,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21898842, y: 0.5108938}
   m_EdgeRadius: 0
+--- !u!95 &8379701469744886026
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6033554251695127567}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 14da2d21b557c4766a519e38d6a59975, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
