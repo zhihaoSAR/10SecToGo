@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: b9d6cdd74c4464384a8c310e402b1476
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4423244247274032429
+    second: toxic_zone_0
+  - first:
+      213: 2641758052386455182
+    second: toxic_zone_1
+  - first:
+      213: -4900084475906513656
+    second: toxic_zone_2
+  - first:
+      213: 252052546045210569
+    second: toxic_zone_3
+  - first:
+      213: -6059101096635790467
+    second: toxic_zone_4
+  - first:
+      213: 6476585149681593280
+    second: toxic_zone_5
+  - first:
+      213: -2858921858342572324
+    second: toxic_zone_6
+  - first:
+      213: -9098139345233588178
+    second: toxic_zone_7
+  - first:
+      213: 1963607436008171034
+    second: toxic_zone_8
+  - first:
+      213: 133701033271931132
+    second: toxic_zone_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +100,231 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: toxic_zone_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5cd779af9ec422196913a78a8e5a12
+      internalID: 4423244247274032429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxic_zone_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 10
+        width: 78
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5376223, y: 0.50932914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e97d378bb1e344ecbf0738038d69ccf
+      internalID: 2641758052386455182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxic_zone_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 3
+        width: 96
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cb1ca584e914c5f94b3dab926e87b4
+      internalID: -4900084475906513656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxic_zone_3
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 4
+        width: 114
+        height: 78
+      alignment: 9
+      pivot: {x: 0.46237734, y: 0.5186583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2824f370c2a4336b4597ffa41cbe26
+      internalID: 252052546045210569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxic_zone_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 4
+        width: 121
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e34955c3125f4fd5be308e3b80099e7
+      internalID: -6059101096635790467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxic_zone_5
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 13
+        width: 121
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2ae9a35737f4b8fa213ce53c1b2a9a
+      internalID: 6476585149681593280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxic_zone_6
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 22
+        width: 128
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a89f5d11ec6f43efa361fe2ca66fbf9
+      internalID: -2858921858342572324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxic_zone_7
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 29
+        width: 128
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391b6da8b117e40da84d74eebf3690ba
+      internalID: -9098139345233588178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxic_zone_8
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 42
+        width: 126
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f601801dd2cc145eea1c303575e6db1b
+      internalID: 1963607436008171034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxic_zone_9
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 48
+        width: 133
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6e07fba92254e7bb6c4e79e9a9c478
+      internalID: 133701033271931132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
