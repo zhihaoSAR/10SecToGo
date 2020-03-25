@@ -7,6 +7,7 @@ public class Police : MonoBehaviour
     public GameObject bullet;
     private Transform enemyTransform;
     private Vector3 endPosition;
+    private Animator anim;
 
     private float timeFromLastShot = 0;
     public float shootTime = 1;
@@ -25,9 +26,10 @@ public class Police : MonoBehaviour
 
     void Start()
     {
-
+        
         body = gameObject.GetComponent<Rigidbody2D>();
         enemyTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        anim = gameObject.GetComponent<Animator>();
         moveCoroutine = StartCoroutine(Chase());
 
     }
@@ -35,6 +37,8 @@ public class Police : MonoBehaviour
     private void Update()
     {
         timeFromLastShot = timeFromLastShot + Time.deltaTime;
+        /*if (body.velocity == Vector2.zero)
+            anim.SetBool("Moving",false);*/
     }
 
     IEnumerator Chase()
@@ -45,6 +49,7 @@ public class Police : MonoBehaviour
         {
             Vector3 newPosition = Vector3.MoveTowards(body.position, enemyTransform.position, Speed * Time.deltaTime);
             body.MovePosition(newPosition);
+            anim.SetBool("Moving", true);
             yield return new WaitForFixedUpdate();
         }
     }
@@ -55,8 +60,9 @@ public class Police : MonoBehaviour
         float remainingDistance = (transform.position - endPosition).sqrMagnitude;
         while (remainingDistance > float.Epsilon)
         {
-            Vector3 newPosition = Vector3.MoveTowards(body.position, -enemyTransform.position, Speed * Time.deltaTime);
+            Vector3 newPosition = Vector3.MoveTowards(body.position, -enemyTransform.position * 10000000, Speed * Time.deltaTime);
             body.MovePosition(newPosition);
+            anim.SetBool("Moving", true);
             yield return new WaitForFixedUpdate();
         }
     }
@@ -66,6 +72,7 @@ public class Police : MonoBehaviour
         //Debug.Log(timeFromLastShot);
         if (timeFromLastShot > shootTime)
         {
+            anim.SetTrigger("Shoot");
             Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
             timeFromLastShot = 0;
             yield return new WaitForFixedUpdate();
