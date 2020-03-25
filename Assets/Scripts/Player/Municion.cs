@@ -31,6 +31,10 @@ public class Municion : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            collision.collider.GetComponent<Enemy>().receiveDamage();
+        }
         gameObject.SetActive(false);
     }
     public void initialize(Vector3 dir,Vector3 pos)

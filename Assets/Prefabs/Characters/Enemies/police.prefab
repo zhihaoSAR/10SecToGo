@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 8120976243508212205}
   - component: {fileID: 8120976243508212206}
   - component: {fileID: -5398277778082941386}
-  - component: {fileID: 2556709767256548774}
+  - component: {fileID: 1795000183491257815}
+  - component: {fileID: 1093451002335231580}
   m_Layer: 0
   m_Name: police
   m_TagString: Enemy
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 162353495
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 14657fb8d39f3e749a2defb16c9765aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -93,7 +94,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8120976243508212177}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -150,7 +151,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
---- !u!61 &2556709767256548774
+  playerDamage: 0
+  health: 2
+  immuneTime: 0.5
+  effectTime: 0.1
+--- !u!61 &1795000183491257815
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,3 +181,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23042107, y: 0.43302858}
   m_EdgeRadius: 0
+--- !u!95 &1093451002335231580
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120976243508212177}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c9565a631137143d8bc58fcedf9b119a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

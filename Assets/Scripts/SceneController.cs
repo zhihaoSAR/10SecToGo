@@ -106,6 +106,7 @@ public class SceneController : MonoBehaviour
                 Enemy e = Instantiate<Enemy>(config.Enemies[enemyInd]);
                 e.transform.position = spawnPos;
                 e.controller = this;
+                e.playerDamage = player.damage;
                 enemiesSpawned++;
             }
             yield return new WaitForSeconds(config.SpawnTime);

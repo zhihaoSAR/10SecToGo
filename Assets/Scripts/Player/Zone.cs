@@ -22,8 +22,21 @@ public class Zone : MonoBehaviour
         gameObject.SetActive(false);
         
     }
+    
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (!other.isTrigger &&other.CompareTag("Enemy"))
+        {
+            other.GetComponent<Enemy>().receiveDamage();
+        }
+    }
+    /*
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            collision.collider.GetComponent<Enemy>().receiveDamage();
+        }
 
-    }
+    }*/
 }

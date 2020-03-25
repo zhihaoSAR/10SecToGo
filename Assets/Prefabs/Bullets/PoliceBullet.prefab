@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 641720145494518666}
   m_Layer: 0
   m_Name: PoliceBullet
-  m_TagString: Untagged
+  m_TagString: Attack_E
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1793903811
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -5832054629394815809, guid: fd33f20528e5a4446a85a95b00bd10b8,
     type: 3}
