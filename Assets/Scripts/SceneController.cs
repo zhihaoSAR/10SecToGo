@@ -20,7 +20,7 @@ public class SceneController : MonoBehaviour
     float[] probability;
     int enemyNum;
 
-    float time;
+    public float time;
 
     void Start()
     {
