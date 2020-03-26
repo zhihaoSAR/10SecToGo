@@ -62,5 +62,7 @@ public class Explosivo : MonoBehaviour
         destination = dst;
         percentComplete = 0;
         transform.position = startPosition;
+        desactive = false;
+        fin = false;
     }
 }

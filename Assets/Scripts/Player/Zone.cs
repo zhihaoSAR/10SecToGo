@@ -6,6 +6,7 @@ public class Zone : MonoBehaviour
 {
 
     const float time = 3;
+    float offset = 0.3f;
     void Start()
     {
         gameObject.SetActive(false);
@@ -13,6 +14,7 @@ public class Zone : MonoBehaviour
 
     public void initialize(Vector3 pos)
     {
+        pos.y -= offset;
         transform.position = pos;
         StartCoroutine(destroy());
     }
