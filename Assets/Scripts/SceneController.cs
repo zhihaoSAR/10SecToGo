@@ -50,10 +50,12 @@ public class SceneController : MonoBehaviour
         {
             //Debug.Log("Game Over");
             //Debug.Log(time);
+            player.death();
         }
     }
-    public void EnemyDead()
+    public void EnemyDead(float increase)
     {
+        time += increase;
         if (++enemiesDead == enemyNum)
         {
             if(++round > config.MaxRound)
