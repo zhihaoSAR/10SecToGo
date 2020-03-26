@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxRound: 20
   Enemies:
-  - {fileID: -1692153137168407917, guid: b7e2f7f88ceb905479b6a366d2acee06, type: 3}
-  - {fileID: -5398277778082941386, guid: 6b519396f3d1a87488f71b15ce1eb378, type: 3}
+  - {fileID: 6236621211851283530, guid: 0c42195b626c13547ab5e02f84262f26, type: 3}
+  - {fileID: 2637760643129083716, guid: aa855b4bab9c31f4d94f15a5ebb7840e, type: 3}
   InitProbability:
   - 70
   - 30

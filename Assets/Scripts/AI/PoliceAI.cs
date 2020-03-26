@@ -42,6 +42,7 @@ public class PoliceAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         seeker = GetComponent<Seeker>();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
@@ -95,7 +96,7 @@ public class PoliceAI : MonoBehaviour
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - body.position).normalized * intState;
         Vector2 force = direction * speed * Time.deltaTime;
 
-        body.AddForce(force);
+        body.AddForce(force*1000);
 
         float distanceToWaypoint = Vector2.Distance(body.position, path.vectorPath[currentWaypoint]);
 

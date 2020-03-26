@@ -16,14 +16,14 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
     void death()
     {
         controller.EnemyDead();
-        anim.SetTrigger("Die");
+        anim.SetBool("Dead",true);
     }
     public void DestroyEnemy() { Destroy(gameObject); }
     public void receiveDamage()
