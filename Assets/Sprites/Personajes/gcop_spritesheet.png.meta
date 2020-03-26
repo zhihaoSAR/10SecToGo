@@ -1,7 +1,190 @@
 fileFormatVersion: 2
 guid: a5eb91caa947348b0bc999afa670cfa3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4685607211213744559
+    second: gcop_spritesheet_0
+  - first:
+      213: 7370415540880287796
+    second: gcop_spritesheet_1
+  - first:
+      213: -1568468165909968991
+    second: gcop_spritesheet_2
+  - first:
+      213: 1731754466545499820
+    second: gcop_spritesheet_3
+  - first:
+      213: -6088441656971510794
+    second: gcop_shoot1
+  - first:
+      213: 9134886077520998741
+    second: gcop_shoot2
+  - first:
+      213: 2245564158040095125
+    second: gcop_shoot3
+  - first:
+      213: -8590918479769643036
+    second: gcop_shoot4
+  - first:
+      213: 6656073657203188898
+    second: gcop_shoot5
+  - first:
+      213: -5800437895070929536
+    second: gcop_shoot6
+  - first:
+      213: 8827535845483059854
+    second: gcop_spritesheet_10
+  - first:
+      213: 8167166144124221032
+    second: gcop_spritesheet_11
+  - first:
+      213: 2270824986253813746
+    second: gcop_spritesheet_12
+  - first:
+      213: -8100123162277534423
+    second: gcop_spritesheet_13
+  - first:
+      213: -6995285467856893754
+    second: gcop_spritesheet_14
+  - first:
+      213: -2796985347627564584
+    second: gcop_spritesheet_15
+  - first:
+      213: -2278448729198404078
+    second: gcop_spritesheet_16
+  - first:
+      213: 7541379112527953895
+    second: gcop_spritesheet_17
+  - first:
+      213: -4035088193458405078
+    second: gcop_spritesheet_18
+  - first:
+      213: -2392312784666875176
+    second: gcop_spritesheet_19
+  - first:
+      213: 5299236631205723075
+    second: gcop_spritesheet_20
+  - first:
+      213: -7624361696795203254
+    second: gcop_spritesheet_21
+  - first:
+      213: -2542188649796788784
+    second: gcop_spritesheet_22
+  - first:
+      213: -4100124499536715308
+    second: gcop_spritesheet_23
+  - first:
+      213: 6932365433092125516
+    second: gcop_spritesheet_24
+  - first:
+      213: -2030415836914546383
+    second: gcop_spritesheet_25
+  - first:
+      213: 4709891278506703609
+    second: gcop_spritesheet_26
+  - first:
+      213: -2823134688921704787
+    second: gcop_spritesheet_27
+  - first:
+      213: 5698978698290535161
+    second: gcop_move1
+  - first:
+      213: 4291326781829212899
+    second: gcop_move2
+  - first:
+      213: 4207374122752736104
+    second: gcop_move3
+  - first:
+      213: 6428226718140846037
+    second: gcop_move4
+  - first:
+      213: 3195938356425377021
+    second: gcop_move5
+  - first:
+      213: -629572537081519473
+    second: gcop_move6
+  - first:
+      213: -4131401991152229597
+    second: gcop_move7
+  - first:
+      213: 474167093491741902
+    second: gcop_move8
+  - first:
+      213: -2725513393052976823
+    second: gcop_move9
+  - first:
+      213: 4498065417123185761
+    second: gcop_move10
+  - first:
+      213: -4341717197942766754
+    second: gcop_idle1
+  - first:
+      213: -7707639234746286875
+    second: gcop_idle2
+  - first:
+      213: -1505994045889079416
+    second: gcop_idle3
+  - first:
+      213: -6372775594414929190
+    second: gcop_idle4
+  - first:
+      213: -6358423734000477056
+    second: gcop_death1
+  - first:
+      213: 1813486143302036276
+    second: gcop_death2
+  - first:
+      213: 8514433703239324009
+    second: gcop_death3
+  - first:
+      213: -7161877354028492611
+    second: gcop_death4
+  - first:
+      213: -361849147682584927
+    second: gcop_death5
+  - first:
+      213: -2515132910830586605
+    second: gcop_death6
+  - first:
+      213: 8551053589666373142
+    second: gcop_spritesheet_51
+  - first:
+      213: -3611504749386628650
+    second: gcop_spritesheet_53
+  - first:
+      213: -8642767158914604894
+    second: gcop_spritesheet_54
+  - first:
+      213: 4860758455938261417
+    second: gcop_spritesheet_55
+  - first:
+      213: -6000125090153180595
+    second: gcop_spritesheet_58
+  - first:
+      213: -8009655390093972921
+    second: gcop_spritesheet_59
+  - first:
+      213: -6737554114298956432
+    second: gcop_spritesheet_60
+  - first:
+      213: -1804400870355360365
+    second: gcop_death9
+  - first:
+      213: -4637256284877972589
+    second: gcop_death10
+  - first:
+      213: 5201914225498673661
+    second: gcop_death11
+  - first:
+      213: -5687134532472829598
+    second: gcop_death12
+  - first:
+      213: -394369714841538381
+    second: gcop_spritesheet_69
+  - first:
+      213: -4295797009531714980
+    second: gcop_death8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +223,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +253,1302 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: gcop_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 429
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a16b714683a488fbab53735e14f567
+      internalID: 4685607211213744559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 429
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951dcd11bb4294ccb9db6fee16856c75
+      internalID: 7370415540880287796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 429
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49934b3acda8347d786bb2bb59381f40
+      internalID: -1568468165909968991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 429
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f850ad01f433c4657a455872d0fcf4a8
+      internalID: 1731754466545499820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_shoot1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 366
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844d1dd473132484785c8ded9d235051
+      internalID: -6088441656971510794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_shoot2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 366
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9111dd12a0894479dbeba59dd30a89d0
+      internalID: 9134886077520998741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_shoot3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 366
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a627cc85ace864144937cb32a6411a37
+      internalID: 2245564158040095125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_shoot4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 364
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3c6fc8874b34991ba8499fad38e5aa
+      internalID: -8590918479769643036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_shoot5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 365
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0873e9b7b7a649eca63ec6ba310dea0
+      internalID: 6656073657203188898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_shoot6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 366
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577323767204f42f2a085988ee1e7d56
+      internalID: -5800437895070929536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 407
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6eddc6c54204910bded087754a15ea
+      internalID: 8827535845483059854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 302
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f38cd4b05cc34a709e4bce1b66e2d73
+      internalID: 8167166144124221032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 303
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3585025dafd4188866527cc2169012
+      internalID: 2270824986253813746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 303
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863c4de4b38a24956899e1b1bcab3f10
+      internalID: -8100123162277534423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 309
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d92250f77e04e798794200c2f43491
+      internalID: -6995285467856893754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 303
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087ebbf7995ad403dae0936d30131dfd
+      internalID: -2796985347627564584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 304
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add9e4c726c514c8dacde21ea46f1f3b
+      internalID: -2278448729198404078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 303
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf3121866e5a454984f3b705fddb9b3
+      internalID: 7541379112527953895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 309
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d729a5be527842baac5580fc55ba3fe
+      internalID: -4035088193458405078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 303
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d486cbc49c5c84c02b62fe6024195a3e
+      internalID: -2392312784666875176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 307
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247375e87fae04ce6bf6b01f21a871db
+      internalID: 5299236631205723075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 303
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedd00bc6f29f434e9740c69b4501d39
+      internalID: -7624361696795203254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 303
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de39d255fe69b4d66b6d75805d3b8d46
+      internalID: -2542188649796788784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 303
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb7aaf50b69c45dd9143de55bbe339b
+      internalID: -4100124499536715308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 303
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7431b22089a2848e18c36a84f47c3b71
+      internalID: 6932365433092125516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 303
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6fe860791514feca5a7e8e298a802a
+      internalID: -2030415836914546383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 304
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d0b8a3d8b0f456e98c761f867d00f6
+      internalID: 4709891278506703609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 304
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51eff31576b0e41f9b72e55b0c7da530
+      internalID: -2823134688921704787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 239
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b980a279d7d54d7c9e55ae91a97106d
+      internalID: 5698978698290535161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 238
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4ef4456fdfe4ac5a1e02c1dec2f8cf
+      internalID: 4291326781829212899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 238
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d0501a4bc9646a1951d4381ad37672
+      internalID: 4207374122752736104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 239
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672c44b563f5149beb0cb20669963762
+      internalID: 6428226718140846037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 239
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8fe143739b1492189c755e681c6b81
+      internalID: 3195938356425377021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move6
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 239
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69970cdc628f6417aa61ebdb1dbde524
+      internalID: -629572537081519473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move7
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 238
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932322486cabb47d3a0d57d8c5dd8a57
+      internalID: -4131401991152229597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move8
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 238
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6355f3de2d4a3459685a5998eedef041
+      internalID: 474167093491741902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move9
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 239
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d736d67e3fdfc46a9acc17b4090976f9
+      internalID: -2725513393052976823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_move10
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 239
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211feecba1d2b4ccaabcb64d32a0e81c
+      internalID: 4498065417123185761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_idle1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 174
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ed1a594acf1452089853caf7adaee6
+      internalID: -4341717197942766754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_idle2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 174
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2f22d58e7e644799fc93bb6e8a1001
+      internalID: -7707639234746286875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_idle3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 174
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd091067535094c899250dda23ef308d
+      internalID: -1505994045889079416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_idle4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 174
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aee7b92a4174c25b0e5f10231e1b89
+      internalID: -6372775594414929190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 106
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3964750deb8a42d096b4d045a1e4449
+      internalID: -6358423734000477056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 113
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb499c0722f744459ecf0c8984adae5
+      internalID: 1813486143302036276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 104
+        width: 75
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78155123847c494490cf1feabb9ef3b
+      internalID: 8514433703239324009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death4
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 105
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9bf7758620c44159cff2c9385d210c
+      internalID: -7161877354028492611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death5
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 111
+        width: 78
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bba1e12caaff45b48fd9ddfbedebd41
+      internalID: -361849147682584927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 116
+        width: 84
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd0971be94e44bb6b4b7ee8f8dc557c
+      internalID: -2515132910830586605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 137
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668c649b52d2e4ec09fc6167ebae0af6
+      internalID: 8551053589666373142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 126
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14937e85f08854277bf2ed62f317c6f0
+      internalID: -3611504749386628650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 116
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f29c5fcd77b430580846d3fbcf72b9
+      internalID: -8642767158914604894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 114
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fa49fc1bdc7480abcde6252e61d0b4
+      internalID: 4860758455938261417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 106
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46505bdad0a6a489198180f42a61ccaa
+      internalID: -6000125090153180595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 78
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c4f6c115faa4f5e86c615e46d66537
+      internalID: -8009655390093972921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 77
+        width: 41
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea6cb96ab6be44eda5598ee1f6e23b9
+      internalID: -6737554114298956432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 59
+        width: 92
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add37a67776e64944bc714c6add477e2
+      internalID: -1804400870355360365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death10
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 73
+        width: 95
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154fd5ad5b685447c9e8cfec89569d39
+      internalID: -4637256284877972589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 75
+        width: 98
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270c45a4538ee478dad9029248fedcb8
+      internalID: 5201914225498673661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death12
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 74
+        width: 94
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d01e8a68ae1d4a45ac9f658204c21f5
+      internalID: -5687134532472829598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 74
+        width: 95
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fb202d5306d4be289dfa872c9d9cfe
+      internalID: -394369714841538381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gcop_death8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 49
+        width: 90
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6405033e571cb4cdeb25cf94250e5df6
+      internalID: -4295797009531714980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
