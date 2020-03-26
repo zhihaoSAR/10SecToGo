@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4519382101323806572}
   - component: {fileID: 4519382101323806573}
   - component: {fileID: 4519382101323806575}
+  - component: {fileID: 4648461090910284413}
   m_Layer: 0
   m_Name: Explosivo
   m_TagString: Attack_P
@@ -67,10 +68,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1793903811
-  m_SortingLayer: 3
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_SortingLayerID: 162353495
+  m_SortingLayer: 4
+  m_SortingOrder: 20
+  m_Sprite: {fileID: 2296283791297183335, guid: 129e305fbfd104f5c9a80223e00baed0,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,4 +96,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zone: {fileID: -3581589119061459104, guid: 5534ca5a3815f7141ad08a32c1cdb9a0, type: 3}
+  desactive: 0
   offset: 0.1
+--- !u!95 &4648461090910284413
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4519382101323806570}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4bb88dde1ddd64b9087df685900dcafd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
