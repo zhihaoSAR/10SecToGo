@@ -68,7 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   playerDamage: 0
-  health: 1
+  maxHealth: 0
   immuneTime: 0.5
   effectTime: 0.1
 --- !u!50 &6236621211851283531
@@ -170,7 +170,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0017529726, y: 0.0010385513}
+  m_Offset: {x: 0.0009951591, y: 0.004918933}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -181,7 +181,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15310073, y: 0.35208797}
+  m_Size: {x: 0.2172246, y: 0.5142391}
   m_EdgeRadius: 0
 --- !u!1 &8460839282445370638
 GameObject:
