@@ -12,19 +12,22 @@ public class Enemy : MonoBehaviour
     float health;
     SpriteRenderer sprite;
     Rigidbody2D rb;
+    Animator anim;
     bool immune = false;
 
     void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         health = maxHealth;
+        anim = GetComponent<Animator>();
     }
     void death()
     {
         controller.EnemyDead(maxHealth);
-        Destroy(gameObject);
+        anim.SetBool("Dead",true);
     }
+    public void DestroyEnemy() { Destroy(gameObject); }
     public void receiveDamage()
     {
         if(!immune)
