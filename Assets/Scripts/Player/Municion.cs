@@ -11,37 +11,54 @@ public class Municion : MonoBehaviour
     Vector3 movement;
     [SerializeField]
     float offset = 0.1f;
+    bool canMove = true;
+    [HideInInspector]
+    public bool desactive;
+    Animator anim;
+    
     
     void Start()
     {
         gameObject.SetActive(false);
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
     {
-        if(now > vida)
+        if(now > vida || desactive)
         {
             gameObject.SetActive(false);
         }
         else
         {
-            transform.Translate(movement*Time.deltaTime);
-            now += Time.deltaTime;
+            if(canMove)
+            {
+                transform.Translate(movement * Time.deltaTime);
+                now += Time.deltaTime;
+            }
+            
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Enemy"))
+        if(canMove)
         {
-            collision.collider.GetComponent<Enemy>().receiveDamage();
+            canMove = false;
+            anim.SetTrigger("impact");
+            if (collision.collider.CompareTag("Enemy"))
+            {
+                collision.collider.GetComponent<Enemy>().receiveDamage();
+            }
         }
-        gameObject.SetActive(false);
     }
+
     public void initialize(Vector3 dir,Vector3 pos)
     {
         direction = dir;
         transform.position = pos + dir * offset;
         movement = dir * speed;
         now = 0;
+        canMove = true;
+        desactive = false;
     }
 }
