@@ -11,18 +11,21 @@ public class Enemy : MonoBehaviour
     public float health,immuneTime = 0.5f,effectTime = 0.1f;
     SpriteRenderer sprite;
     Rigidbody2D rb;
+    Animator anim;
     bool immune = false;
 
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
     void death()
     {
         controller.EnemyDead();
-        Destroy(gameObject);
+        anim.SetTrigger("Die");
     }
+    public void DestroyEnemy() { Destroy(gameObject); }
     public void receiveDamage()
     {
         if(!immune)

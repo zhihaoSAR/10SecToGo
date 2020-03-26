@@ -41,7 +41,7 @@ AnimationClip:
       value: {fileID: 8096985145878331753, guid: 1947cac16bfa24094a35cd8eebdf1b35,
         type: 3}
     attribute: m_Sprite
-    path: 
+    path: policeGFX
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 8
@@ -52,7 +52,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 413187523
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -90,4 +90,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.875
+    functionName: DestroyEnemy
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
