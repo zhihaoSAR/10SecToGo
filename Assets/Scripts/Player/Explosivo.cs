@@ -6,10 +6,13 @@ public class Explosivo : MonoBehaviour
 {
     Vector3 direction;
     const float vida = 3; //segundos
-    const float duration = 1f;
+    const float duration = 2f;
     const float maxHeight = 1f;
     [SerializeField]
     Zone zone;
+    [HideInInspector]
+    public bool desactive;
+    bool fin = false;
 
     [SerializeField]
     float offset = 0.1f;
@@ -23,6 +26,13 @@ public class Explosivo : MonoBehaviour
         zone = Instantiate<Zone>(zone);
     }
 
+    void Update()
+    {
+        if(desactive)
+        {
+            gameObject.SetActive(false);
+        }
+    }
     void FixedUpdate()
     {
 
@@ -36,11 +46,13 @@ public class Explosivo : MonoBehaviour
         }
         else
         {
+            if(!fin)
+            {
+                fin = true;
+                zone.gameObject.SetActive(true);
+                zone.initialize(transform.position);
+            }
             
-            
-            zone.gameObject.SetActive(true);
-            zone.initialize(transform.position);
-            gameObject.SetActive(false);
         }
             
     }
@@ -50,5 +62,7 @@ public class Explosivo : MonoBehaviour
         destination = dst;
         percentComplete = 0;
         transform.position = startPosition;
+        desactive = false;
+        fin = false;
     }
 }

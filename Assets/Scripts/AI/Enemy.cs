@@ -8,7 +8,8 @@ public class Enemy : MonoBehaviour
     public SceneController controller;
     [HideInInspector]
     public float playerDamage;
-    public float health,immuneTime = 0.5f,effectTime = 0.1f;
+    public float maxHealth,immuneTime = 0.5f,effectTime = 0.1f;
+    float health;
     SpriteRenderer sprite;
     Rigidbody2D rb;
     bool immune = false;
@@ -17,10 +18,11 @@ public class Enemy : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        health = maxHealth;
     }
     void death()
     {
-        controller.EnemyDead();
+        controller.EnemyDead(maxHealth);
         Destroy(gameObject);
     }
     public void receiveDamage()

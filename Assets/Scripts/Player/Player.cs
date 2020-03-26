@@ -219,11 +219,19 @@ public class Player : MonoBehaviour
             }
             else
             {
-                state = State.DEAD;
-                immune = true;
-                canAttack = false;
-                anim.SetTrigger("death");
+                death();
             }
+        }
+        
+    }
+    public void death()
+    {
+        if(state != State.DEAD)
+        {
+            state = State.DEAD;
+            immune = true;
+            canAttack = false;
+            anim.SetTrigger("death");
         }
         
     }
