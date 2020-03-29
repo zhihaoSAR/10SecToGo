@@ -8,6 +8,8 @@ public class SceneController : MonoBehaviour
 {
     //---------------Posible van ser quitado---------------------
     public Ataque a;
+    public Pasivo p1,p2;
+
 
     //---------------Variables no van quitar----------------------------
     public Player player;
@@ -19,6 +21,8 @@ public class SceneController : MonoBehaviour
     int enemiesDead;
     float[] probability;
     int enemyNum;
+    float extraTime;
+    bool explosivo, zombificar;
 
     public float time;
 
@@ -26,8 +30,8 @@ public class SceneController : MonoBehaviour
     {
         Modificador m = new Modificador();
         m.Ataque = a;// Ataque.DISTANTIA;
-
-        player.InitPlayer(m);
+        m.pasivos[0] = p1;
+        m.pasivos[1] = p2;
 
         probability = new float[config.Enemies.Length];
         for(int i = 0;i< config.Enemies.Length;i++)
@@ -38,9 +42,34 @@ public class SceneController : MonoBehaviour
         round = 1;
         enemiesDead = 0;
         enemiesSpawned = 0;
-        time = 10;
+
+        InitialModifier(m);
         StartCoroutine("Spawn");
 
+    }
+
+    void InitialModifier(Modificador m)
+    {
+        time = 10;
+        extraTime = 0;
+        explosivo = false;
+        for (int i = 0; i < 2; i++)
+        {
+            switch (m.pasivos[i])
+            {
+                case Pasivo.MAS_TIEMPO_INI:
+                    time += 2;
+                    continue;
+                case Pasivo.MAS_TIEMPO_MATAR:
+                    extraTime = 0.5f;
+                    continue;
+                case Pasivo.EXPLOSIVO:
+                    explosivo = true;
+                    continue;
+            }
+        }
+
+        player.InitPlayer(m);
     }
 
     void Update()
@@ -55,7 +84,7 @@ public class SceneController : MonoBehaviour
     }
     public void EnemyDead(float increase)
     {
-        time += increase;
+        time += increase + extraTime;
         if (++enemiesDead == enemyNum)
         {
             if(++round > config.MaxRound)
@@ -109,6 +138,8 @@ public class SceneController : MonoBehaviour
                 e.transform.position = spawnPos;
                 e.controller = this;
                 e.playerDamage = player.damage;
+                e.explo = explosivo;
+                e.zombificar = zombificar;
                 enemiesSpawned++;
             }
             yield return new WaitForSeconds(config.SpawnTime);
