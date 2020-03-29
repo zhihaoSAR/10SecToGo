@@ -7,10 +7,6 @@ public class Zone : MonoBehaviour
 
     const float time = 3;
     float offset = 0.3f;
-    void Start()
-    {
-        gameObject.SetActive(false);
-    }
 
     public void initialize(Vector3 pos)
     {
@@ -21,7 +17,7 @@ public class Zone : MonoBehaviour
     IEnumerator destroy()
     {
         yield return new WaitForSeconds(time);
-        gameObject.SetActive(false);
+        Destroy(gameObject);
         
     }
     

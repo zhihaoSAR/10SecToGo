@@ -8,12 +8,16 @@ public class Enemy : MonoBehaviour
     public SceneController controller;
     [HideInInspector]
     public float playerDamage;
+    [HideInInspector]
+    public bool explo = false,zombificar = false;
     public float maxHealth,immuneTime = 0.5f,effectTime = 0.1f;
     float health;
     SpriteRenderer sprite;
     Rigidbody2D rb;
     Animator anim;
     bool immune = false;
+    public Zone toxic;
+    
 
     void Start()
     {
@@ -26,6 +30,11 @@ public class Enemy : MonoBehaviour
     {
         controller.EnemyDead(maxHealth);
         anim.SetBool("Dead",true);
+        if(explo)
+        {
+            toxic = Instantiate<Zone>(toxic);
+            toxic.initialize(transform.position);
+        }
     }
     public void DestroyEnemy() { Destroy(gameObject); }
     public void receiveDamage()

@@ -23,7 +23,7 @@ public class Explosivo : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(false);
-        zone = Instantiate<Zone>(zone);
+        
     }
 
     void Update()
@@ -49,8 +49,8 @@ public class Explosivo : MonoBehaviour
             if(!fin)
             {
                 fin = true;
-                zone.gameObject.SetActive(true);
-                zone.initialize(transform.position);
+                Zone z = Instantiate<Zone>(zone);
+                z.initialize(transform.position);
             }
             
         }

@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     Explosivo[] explosivos;
     Attack attack;
     bool canAttack = true, immune = false;
+    bool infect;
     Rigidbody2D rb;
     SpriteRenderer sprite;
     Camera mainC;
@@ -55,6 +56,8 @@ public class Player : MonoBehaviour
     }
     public void InitPlayer(Modificador mod)
     {
+        health = 1;
+        damage = 1;
         switch(mod.Ataque)
         {
             case Ataque.DASH:
@@ -77,8 +80,21 @@ public class Player : MonoBehaviour
                 attack = new Attack(Explosive);
                 break;
         }
-        
-        
+        infect = false;
+        for (int i = 0; i < 2; i++)
+        {
+            switch (mod.pasivos[i])
+            {
+                case Pasivo.MAS_DANYO:
+                    damage+=0.5f;
+                    continue;
+                case Pasivo.MAS_VIDA:
+                    health++;
+                    continue;
+            }
+        }
+
+
     }
     void Update()
     {
