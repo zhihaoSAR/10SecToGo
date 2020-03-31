@@ -1,7 +1,133 @@
 fileFormatVersion: 2
 guid: 2483b18f25e5c48b98faf019a1958d31
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7831808714145972275
+    second: hazmat_sprite_0
+  - first:
+      213: -4474106678151258185
+    second: hazmat_sprite_1
+  - first:
+      213: -7252296833733672466
+    second: hazmat_sprite_2
+  - first:
+      213: -6189545005654695191
+    second: hazmat_sprite_3
+  - first:
+      213: 6685119794531763694
+    second: hazmat_sprite_4
+  - first:
+      213: -730801005929571350
+    second: hazmat_sprite_5
+  - first:
+      213: 4375461149464742094
+    second: hazmat_sprite_6
+  - first:
+      213: -7771936101740327783
+    second: hazmat_sprite_7
+  - first:
+      213: 4734927028021395894
+    second: hazmat_sprite_8
+  - first:
+      213: 12478396331446525
+    second: hazmat_sprite_9
+  - first:
+      213: -483108854691956169
+    second: hazmat_sprite_10
+  - first:
+      213: 5771492786431968056
+    second: hazmat_sprite_11
+  - first:
+      213: 8294258780876056687
+    second: hazmat_sprite_12
+  - first:
+      213: 3374728669109623700
+    second: hazmat_sprite_13
+  - first:
+      213: 5060537378070243530
+    second: hazmat_sprite_14
+  - first:
+      213: 2136368168344051991
+    second: hazmat_sprite_15
+  - first:
+      213: 3552605176734401018
+    second: hazmat_sprite_16
+  - first:
+      213: -6412439887508251700
+    second: hazmat_sprite_17
+  - first:
+      213: -3288317289908119280
+    second: hazmat_sprite_18
+  - first:
+      213: -2222664215621670007
+    second: hazmat_sprite_19
+  - first:
+      213: -8849621364783075981
+    second: hazmat_sprite_20
+  - first:
+      213: 7520418057009183229
+    second: hazmat_sprite_21
+  - first:
+      213: -3929152703829084833
+    second: hazmat_sprite_22
+  - first:
+      213: 3456661865626505466
+    second: hazmat_sprite_23
+  - first:
+      213: 3608912550561965307
+    second: hazmat_death1
+  - first:
+      213: -8890380070341347840
+    second: hazmat_sprite_25
+  - first:
+      213: 6162289184011174409
+    second: hazmat_sprite_26
+  - first:
+      213: 6249320318491426945
+    second: hazmat_death2
+  - first:
+      213: 3885658024764606073
+    second: hazmat_sprite_28
+  - first:
+      213: -4804419322689705105
+    second: hazmat_death3
+  - first:
+      213: -6348853176996277814
+    second: hazmat_sprite_30
+  - first:
+      213: 2739162268729891667
+    second: hazmat_death4
+  - first:
+      213: 1561742084273675801
+    second: hazmat_sprite_32
+  - first:
+      213: 7479091785377437504
+    second: hazmat_sprite_33
+  - first:
+      213: 4178115317454917738
+    second: hazmat_death5
+  - first:
+      213: 4232382594592437348
+    second: hazmat_sprite_35
+  - first:
+      213: -5001987338536634358
+    second: hazmat_death6
+  - first:
+      213: -8040563514512626759
+    second: hazmat_death7
+  - first:
+      213: -6302387391614480675
+    second: hazmat_death9
+  - first:
+      213: 2969096841890162126
+    second: hazmat_death10
+  - first:
+      213: 3143177999800357627
+    second: hazmat_death11
+  - first:
+      213: 497831688283274133
+    second: hazmat_sprite_41
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +166,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -84,7 +210,889 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: hazmat_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 436
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eec2b030f61c4933b27319843cfda58
+      internalID: 7831808714145972275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 436
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20d2b0bb9dea45edb404b8dcbdd7bdb
+      internalID: -4474106678151258185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 436
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b372095e7b804ec19d3918dd69e5a99
+      internalID: -7252296833733672466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 436
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fe5fe63e26d42e59919f4fe9711255
+      internalID: -6189545005654695191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 371
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177cc9226c71a43c7a9333528df560aa
+      internalID: 6685119794531763694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 371
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c635568946654c418d391fee781fe32
+      internalID: -730801005929571350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 371
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0bfb99fef0c45d597bce46e5b0d850
+      internalID: 4375461149464742094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 371
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469a97a6f05a942538375eafefb6b8f7
+      internalID: -7771936101740327783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 371
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339ca5f9d233244908950107e0448434
+      internalID: 4734927028021395894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 371
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7547197dbcac454b83a15769353caba
+      internalID: 12478396331446525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 371
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b13d57b90ef4190962e1ee1a42825b
+      internalID: -483108854691956169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 301
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b82ed7f71ae14a0382782ff9648f043
+      internalID: 5771492786431968056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 301
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3056fabf7374433812af45b03f0cb1
+      internalID: 8294258780876056687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 301
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af302c2f1513d4ff3904c7a069914213
+      internalID: 3374728669109623700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 301
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae875d1184ac41a197896e95b08a9d6
+      internalID: 5060537378070243530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 301
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fe4105946c34034b6677ca40359d42
+      internalID: 2136368168344051991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 228
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3d200f66f1c401292c315f15c0eb56
+      internalID: 3552605176734401018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 228
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8a96a0a44074369a0ee63d16d43fce
+      internalID: -6412439887508251700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 228
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0383d2e47a5da42c48049c1f4022ca3d
+      internalID: -3288317289908119280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 228
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921ba003c20d04cafa7ce6401a4d724b
+      internalID: -2222664215621670007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 228
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e73d10c51c7e4ac3a0b98c29e6f66a2
+      internalID: -8849621364783075981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 228
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cbeec2a0e024550bd0f4374fb2364f
+      internalID: 7520418057009183229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 228
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e4067197a05427093e29d7571646fd
+      internalID: -3929152703829084833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 227
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7216bf4809a2e473fb46709b1a688454
+      internalID: 3456661865626505466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 83
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28fb7cb054474a279d0d8b9dd60527a
+      internalID: 3608912550561965307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 155
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc056ba0ff2554693822919a1e3b2abc
+      internalID: -8890380070341347840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 155
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2da642bc6ad44639baf5af645ae01de
+      internalID: 6162289184011174409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 81
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fc9d23a41f44b66bd2f2608e9eb3c6
+      internalID: 6249320318491426945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 155
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ec0a86cf27f469fa4692ef3d237b81
+      internalID: 3885658024764606073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 82
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8010357bea94214972a749010136e9
+      internalID: -4804419322689705105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_30
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 155
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9717f28290234f5aa57d8a5860bccd6
+      internalID: -6348853176996277814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death4
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 77
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2052b4ee0f7ba4eab8a204905f1b70d0
+      internalID: 2739162268729891667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_32
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 151
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a33294caf974c039d0613fadf99e90
+      internalID: 1561742084273675801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_33
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 155
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6f9b2b3312e4a5fbd3b2bc55a8b9dc
+      internalID: 7479091785377437504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death5
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 75
+        width: 81
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac471996db5f945df9077bc4c1cde1fd
+      internalID: 4178115317454917738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_35
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 153
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff39242b205c4dc3bfa8d193db9bcb5
+      internalID: 4232382594592437348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death6
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 78
+        width: 81
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666a83bef70724934b4a612ce6c62cc8
+      internalID: -5001987338536634358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death7
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 83
+        width: 83
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cdddc691bff4b4fad2a430f0f9a5b6
+      internalID: -8040563514512626759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death9
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 96
+        width: 76
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c51be5628b8c479ba0176ba273ce189
+      internalID: -6302387391614480675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death10
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 106
+        width: 77
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551423c348c4446d58d34e4a6b799125
+      internalID: 2969096841890162126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_death11
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 116
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3327fd467d065402cb3abdf129b38aa4
+      internalID: 3143177999800357627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hazmat_sprite_41
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 118
+        width: 62
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac6ff691286d45cc9847dd69b423151
+      internalID: 497831688283274133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
