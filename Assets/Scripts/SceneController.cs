@@ -25,7 +25,9 @@ public class SceneController : MonoBehaviour
     bool explosivo, zombificar;
 
     public float time;
-
+    //GUI
+    public GameObject GUI;
+    private GUImanager gui;
     void Start()
     {
         Modificador m = new Modificador();
@@ -44,6 +46,10 @@ public class SceneController : MonoBehaviour
         enemiesSpawned = 0;
 
         InitialModifier(m);
+        //GUI
+        gui = GUI.GetComponent<GUImanager>();
+        gui.UpdateRonda(round);
+
         StartCoroutine("Spawn");
 
     }
@@ -105,6 +111,9 @@ public class SceneController : MonoBehaviour
         enemiesDead = 0;
         enemiesSpawned = 0;
         time = 10;
+        //GUI
+        gui.UpdateRonda(round);
+
         enemyNum += config.DeltaEnemies;
         float cantidad = probability[0] - config.DeltaProbability[0] < config.MinProbability ? probability[0] - config.MinProbability : config.DeltaProbability[0];
         probability[0] -= cantidad;
