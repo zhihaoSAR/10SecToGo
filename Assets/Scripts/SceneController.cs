@@ -101,9 +101,11 @@ public class SceneController : MonoBehaviour
     }
     public void ReduceTime(float timeDamage)
     {
-
-        time -= timeDamage;
-        Debug.Log("timedamage");
+        if (!player.getImmune())
+        {
+            time -= timeDamage;
+            Debug.Log("timedamage");
+        }
 
     }
 

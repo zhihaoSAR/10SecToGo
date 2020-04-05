@@ -276,6 +276,9 @@ public class Player : MonoBehaviour
         }
         
     }
+
+    public bool getImmune() { return immune; }
+
     IEnumerator resetImmune()
     {
         yield return new WaitForSeconds(IMMUNE_TIME);

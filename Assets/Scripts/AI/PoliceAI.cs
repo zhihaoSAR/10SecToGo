@@ -129,12 +129,23 @@ public class PoliceAI : MonoBehaviour
         //UnityEditor.Handles.DrawWireDisc(path.vectorPath[currentWaypoint], Vector3.back, 0.1f);
     }
 
-    IEnumerator Shoot()
+    IEnumerator Shoot(Collider2D other)
     {
         if (timeFromLastShot > shootTime)
         {
             anim.SetTrigger("Shoot");
             Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+            if (gameObject.name == "Hazmat")
+            {
+                GameObject bubble2 = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+                bubble2.GetComponent<Bubbles>().changeDirection(25);
+                GameObject bubble3 = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+                bubble3.GetComponent<Bubbles>().changeDirection(50);
+                GameObject bubble4 = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+                bubble4.GetComponent<Bubbles>().changeDirection(-25);
+                GameObject bubble5 = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+                bubble5.GetComponent<Bubbles>().changeDirection(-50);
+            }
             timeFromLastShot = 0;
             Vector2 enemyDirection = target.position - gameObject.transform.position;
             body.AddForce(-enemyDirection*shootBackForce);
@@ -151,7 +162,7 @@ public class PoliceAI : MonoBehaviour
         if (other.CompareTag("Player") && !Physics2D.Raycast(gameObject.transform.position ,enemyDirection,colisionador.radius , obstacles))
         {
             intState = -1;
-            StartCoroutine(Shoot());
+            StartCoroutine(Shoot(other));
             state = State.Flee;
         }
     }
@@ -162,7 +173,7 @@ public class PoliceAI : MonoBehaviour
         if (other.CompareTag("Player") && !Physics2D.Raycast(gameObject.transform.position, enemyDirection, colisionador.radius, obstacles))
         {
             if (timeFromLastShot > shootTime)
-                StartCoroutine(Shoot());
+                StartCoroutine(Shoot(other));
         }
     }
 
