@@ -24,9 +24,12 @@ public class Player : MonoBehaviour
     public float health = 1;
     public float damage = 1;
 
-    public AudioClip dashAudio;
-    public AudioClip walkAudio;
-    public AudioClip screamAudio;
+    [SerializeField]
+    AudioClip dashAudio;
+    [SerializeField]
+    AudioClip walkAudio;
+    [SerializeField]
+    AudioClip screamAudio;
 
     [HideInInspector]
     public State state = State.RUN;
