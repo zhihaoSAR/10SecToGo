@@ -24,6 +24,10 @@ public class Player : MonoBehaviour
     public float health = 1;
     public float damage = 1;
 
+    public AudioClip dashAudio;
+    public AudioClip walkAudio;
+    public AudioClip screamAudio;
+
     [HideInInspector]
     public State state = State.RUN;
     [HideInInspector]
@@ -44,6 +48,7 @@ public class Player : MonoBehaviour
     SpriteRenderer sprite;
     Camera mainC;
     private Animator anim;
+    AudioSource audio;
 
 
 
@@ -53,6 +58,9 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        audio = GetComponent<AudioSource>();
+        audio.clip = walkAudio;
+        audio.Play();
     }
     public void InitPlayer(Modificador mod)
     {
@@ -127,9 +135,21 @@ public class Player : MonoBehaviour
 
 
             //Animación x y
-            anim.SetFloat("speed", Mathf.Abs(xDir)+Mathf.Abs(yDir));
+            bool walking = Mathf.Approximately( Mathf.Abs(xDir) + Mathf.Abs(yDir) ,0) ? false : true;
+            
+            if(walking)
+            {
+                anim.SetFloat("speed",1 );
+                audio.UnPause();
+            }
+            else
+            {
+                anim.SetFloat("speed",0 );
+                audio.Pause();
+            }
+            
 
-            if(!Mathf.Approximately(xDir, 0f)){
+            if (!Mathf.Approximately(xDir, 0f)){
                 transform.localScale = new Vector3(Mathf.Sign(xDir), 1f, 1f);
                 
             }
@@ -144,7 +164,7 @@ public class Player : MonoBehaviour
         canAttack = false;
         attacking = true;
         Vector3 dir = (mousePos - transform.position).normalized;
-        
+        audio.PlayOneShot(dashAudio);
 
         StartCoroutine(Dashing(dir));
 
@@ -247,6 +267,8 @@ public class Player : MonoBehaviour
             state = State.DEAD;
             immune = true;
             canAttack = false;
+            audio.Stop();
+            audio.PlayOneShot(screamAudio) ;
             anim.SetTrigger("death");
         }
         
