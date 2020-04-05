@@ -15,14 +15,25 @@ public class Municion : MonoBehaviour
     [HideInInspector]
     public bool desactive;
     Animator anim;
-    
-    
+    AudioSource audio;
+
+    [SerializeField]
+    AudioClip proyectilAudio;
+    [SerializeField]
+    AudioClip contactAudio;
+
+
     void Start()
     {
         gameObject.SetActive(false);
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
-
+    void OnEnable()
+    {
+            audio.PlayOneShot(proyectilAudio);
+        
+    }
     void FixedUpdate()
     {
         if(now > vida || desactive)
@@ -45,6 +56,7 @@ public class Municion : MonoBehaviour
         {
             canMove = false;
             anim.SetTrigger("impact");
+            audio.PlayOneShot(contactAudio);
             if (collision.collider.CompareTag("Enemy"))
             {
                 collision.collider.GetComponent<Enemy>().receiveDamage();
@@ -60,5 +72,6 @@ public class Municion : MonoBehaviour
         now = 0;
         canMove = true;
         desactive = false;
+        
     }
 }

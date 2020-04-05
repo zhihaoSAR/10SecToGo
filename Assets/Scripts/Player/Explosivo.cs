@@ -13,17 +13,22 @@ public class Explosivo : MonoBehaviour
     [HideInInspector]
     public bool desactive;
     bool fin = false;
+    AudioSource audio;
 
     [SerializeField]
     float offset = 0.1f;
 
+
+
     Vector3 startPosition, destination;
     float percentComplete = 0.0f;
+
+
 
     void Start()
     {
         gameObject.SetActive(false);
-        
+        audio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -64,5 +69,6 @@ public class Explosivo : MonoBehaviour
         transform.position = startPosition;
         desactive = false;
         fin = false;
+        audio.Play();
     }
 }
