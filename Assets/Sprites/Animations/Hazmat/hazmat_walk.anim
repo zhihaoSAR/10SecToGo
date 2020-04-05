@@ -40,7 +40,7 @@ AnimationClip:
       value: {fileID: -483108854691956169, guid: 2483b18f25e5c48b98faf019a1958d31,
         type: 3}
     attribute: m_Sprite
-    path: 
+    path: hazmatGFX
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 10
@@ -51,7 +51,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 399034336
       attribute: 0
       script: {fileID: 0}
       typeID: 212
