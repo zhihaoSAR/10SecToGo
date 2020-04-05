@@ -9,10 +9,14 @@ public class Bubbles : MonoBehaviour
     private Transform target;
     Player player;
     private Animator anim;
+    SceneController controller;
+    float timeFromLastHit = 1;
+    float timeDamage = 2;
 
     // Start is called before the first frame update
     void Start()
     {
+        controller = GameObject.Find("Controller").GetComponent<SceneController>();
         body = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -21,13 +25,21 @@ public class Bubbles : MonoBehaviour
         //Vector3 newPosition = Vector3.MoveTowards(body.position, target.position, speed * Time.deltaTime);
         body.AddForce(force * speed);
     }
+
+    private void Update()
+    {
+        timeFromLastHit += Time.deltaTime;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && timeFromLastHit >=1)
         {
-            player.receiveDamage();
-            body.velocity = new Vector2(0, 0);
+            //player.receiveDamage();
+            Debug.Log("bubbledamage");
+            controller.ReduceTime(timeDamage);
+            //body.velocity = new Vector2(0, 0);
         }
 
     }

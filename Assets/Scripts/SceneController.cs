@@ -99,6 +99,14 @@ public class SceneController : MonoBehaviour
         }
 
     }
+    public void ReduceTime(float timeDamage)
+    {
+
+        time -= timeDamage;
+        Debug.Log("timedamage");
+
+    }
+
     void NextRound()
     {
         time = 10;
