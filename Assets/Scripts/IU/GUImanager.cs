@@ -19,12 +19,13 @@ public class GUImanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        c.text = SceneManager.time.ToString("#");
-        p.text = "hola";
+        if (SceneManager.time > 0)
+            c.text = SceneManager.time.ToString("0.0");
+        else c.text = 0.ToString();
     }
 
     public void UpdateRonda(int numRonda)
     {
-        r.text = "Ronda " + numRonda;
+        r.text = string.Concat("Ronda " , numRonda.ToString());
     }
 }
