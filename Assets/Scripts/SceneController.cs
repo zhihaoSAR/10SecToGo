@@ -116,6 +116,16 @@ public class SceneController : MonoBehaviour
         MenuEntreRondas.SetActive(false);
         Time.timeScale = 1f;
     }
+    public void ReduceTime(float timeDamage)
+    {
+        if (!player.getImmune())
+        {
+            time -= timeDamage;
+            Debug.Log("timedamage");
+        }
+
+    }
+
     void NextRound()
     {
         time = 10;

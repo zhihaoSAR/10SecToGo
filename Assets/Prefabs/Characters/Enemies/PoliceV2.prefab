@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2637760643129083717}
   - component: {fileID: 7972206667390065985}
   - component: {fileID: 1834488094}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PoliceV2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.052204967, y: 0.003843993}
+  m_Offset: {x: -0.052204967, y: 0.0027660206}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -186,7 +186,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28088593, y: 0.5553282}
+  m_Size: {x: 0.28088593, y: 0.29876375}
   m_EdgeRadius: 0
 --- !u!1 &6064296501053170543
 GameObject:
@@ -198,7 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6064296501053170514}
   - component: {fileID: 6064296501053170541}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: policeGFX
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 162353495
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -7408681782762292377, guid: 1947cac16bfa24094a35cd8eebdf1b35,
     type: 3}

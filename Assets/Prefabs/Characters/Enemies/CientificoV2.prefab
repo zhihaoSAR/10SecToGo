@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6236621211851283529}
   - component: {fileID: 6236621211851283508}
   - component: {fileID: 1018145595}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: CientificoV2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0009951591, y: 0.004918933}
+  m_Offset: {x: 0.0009951591, y: -0.00052928925}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -184,7 +184,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2172246, y: 0.5142391}
+  m_Size: {x: 0.2172246, y: 0.2999444}
   m_EdgeRadius: 0
 --- !u!1 &8460839282445370638
 GameObject:
@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8460839282445370626}
   - component: {fileID: 8460839282445370627}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: cientificoGFX
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 162353495
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 2182610492912128367, guid: 3d6da2960b8aa49fb93c87182d008fe2,
     type: 3}

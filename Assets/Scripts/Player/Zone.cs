@@ -8,6 +8,7 @@ public class Zone : MonoBehaviour
     const float time = 3;
     float offset = 0.3f;
 
+
     public void initialize(Vector3 pos)
     {
         pos.y -= offset;
