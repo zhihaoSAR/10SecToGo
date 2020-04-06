@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 
     public Municion municion;
     public Explosivo explosivo;
-    
+    public GameObject SceneController;
 
 
     Municion[] municiones;
@@ -248,6 +248,7 @@ public class Player : MonoBehaviour
             immune = true;
             canAttack = false;
             anim.SetTrigger("death");
+            StartCoroutine(SceneController.GetComponent<SceneController>().deadMenu());
         }
         
     }

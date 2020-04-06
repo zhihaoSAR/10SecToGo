@@ -26,7 +26,7 @@ public class SceneController : MonoBehaviour
 
     public float time;
     //GUI
-    public GameObject GUI;
+    public GameObject GUI,MenuEntreRondas,MenuMuerte;
     private GUImanager gui;
     void Start()
     {
@@ -100,10 +100,21 @@ public class SceneController : MonoBehaviour
             else
             {
                 Debug.Log("Ronda: " + round);
+                ActivarMenuEntreRondas();
                 NextRound();
             }
         }
 
+    }
+    void ActivarMenuEntreRondas()
+    {
+        MenuEntreRondas.SetActive(true);
+        Time.timeScale = 0f;
+    }
+    public void siguienteRonda()
+    {
+        MenuEntreRondas.SetActive(false);
+        Time.timeScale = 1f;
     }
     void NextRound()
     {
@@ -153,5 +164,12 @@ public class SceneController : MonoBehaviour
             }
             yield return new WaitForSeconds(config.SpawnTime);
         }
+    }
+    public IEnumerator deadMenu()
+    {
+        yield return new WaitForSeconds(1);
+        Time.timeScale = 0f;
+        MenuMuerte.SetActive(true);
+
     }
 }
