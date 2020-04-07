@@ -43,10 +43,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a66bd86196eaad4eaa0f948b1f5d860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: 1
+  a: 0
+  p1: 3
+  p2: 0
   player: {fileID: 0}
   SpawnPoints:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   config: {fileID: 11400000, guid: 8dc8855132dd9dc4e94ca3c88e8cf9af, type: 2}
+  time: 0
+  GUI: {fileID: 0}
+  MenuEntreRondas: {fileID: 0}
+  MenuMuerte: {fileID: 0}
+  Paused: 0
