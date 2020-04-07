@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class pauseMenuController : MonoBehaviour
 {
     public static bool IsPaused = false;
+    public string nivel;
     public GameObject PauseMenuUI,sceneController;
     void Update()
     {
@@ -19,6 +20,7 @@ public class pauseMenuController : MonoBehaviour
 
     public void pause()
     {
+        sceneController.GetComponent<SceneController>().pausePlayer();
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         IsPaused = true;
@@ -34,5 +36,10 @@ public class pauseMenuController : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
         
+    }
+    public void reload()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(nivel);
     }
 }

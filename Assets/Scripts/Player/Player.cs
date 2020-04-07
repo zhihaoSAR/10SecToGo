@@ -291,4 +291,9 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(EFFECT_TIME);
         sprite.color = Color.white;
     }
+
+    public void pause()
+    {
+
+    }
 }

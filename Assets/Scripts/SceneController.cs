@@ -108,6 +108,7 @@ public class SceneController : MonoBehaviour
     }
     void ActivarMenuEntreRondas()
     {
+        player.pause();
         Paused = true;
         MenuEntreRondas.SetActive(true);
         Time.timeScale = 0f;
@@ -179,11 +180,16 @@ public class SceneController : MonoBehaviour
     }
     public IEnumerator deadMenu()
     {
+        player.pause();
         Paused = true;
         yield return new WaitForSeconds(1);
         
         Time.timeScale = 0f;
         MenuMuerte.SetActive(true);
 
+    }
+    public void pausePlayer()
+    {
+        player.pause();
     }
 }
