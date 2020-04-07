@@ -135,7 +135,7 @@ public class PoliceAI : MonoBehaviour
         {
             anim.SetTrigger("Shoot");
             Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
-            if (gameObject.name == "Hazmat")
+            if (gameObject.name.StartsWith("Hazmat"))
             {
                 GameObject bubble2 = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
                 bubble2.GetComponent<Bubbles>().changeDirection(25);
