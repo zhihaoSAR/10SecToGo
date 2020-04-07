@@ -145,6 +145,7 @@ public class SceneController : MonoBehaviour
         {
             probability[i] += cantidad * config.DeltaProbability[i];
         }
+        player.unPause();
         StartCoroutine("Spawn");
         
     }
@@ -180,10 +181,10 @@ public class SceneController : MonoBehaviour
     }
     public IEnumerator deadMenu()
     {
-        player.pause();
         Paused = true;
         yield return new WaitForSeconds(1);
-        
+
+        player.pause();
         Time.timeScale = 0f;
         MenuMuerte.SetActive(true);
 
@@ -191,5 +192,9 @@ public class SceneController : MonoBehaviour
     public void pausePlayer()
     {
         player.pause();
+    }
+    public void unPausePlayer()
+    {
+        player.unPause();
     }
 }

@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
 
     public Municion municion;
     public Explosivo explosivo;
-    public GameObject SceneController;
+    public SceneController SceneController;
 
 
     Municion[] municiones;
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
     Camera mainC;
     private Animator anim;
     AudioSource audio;
-
+    bool isPaused = false;
 
 
     void Start()
@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
-        if(state != State.DEAD && canAttack && Input.GetButton("Fire"))
+        if(!isPaused && state != State.DEAD && canAttack && Input.GetButton("Fire"))
         {
             
             Vector3 mousePos = mainC.ScreenToWorldPoint(Input.mousePosition);
@@ -273,7 +273,8 @@ public class Player : MonoBehaviour
             audio.Stop();
             audio.PlayOneShot(screamAudio) ;
             anim.SetTrigger("death");
-            StartCoroutine(SceneController.GetComponent<SceneController>().deadMenu());
+            StartCoroutine(SceneController.deadMenu());
+            
         }
         
     }
@@ -294,6 +295,11 @@ public class Player : MonoBehaviour
 
     public void pause()
     {
-
+        isPaused = true;
+        audio.Pause();
+    }
+    public void unPause()
+    {
+        isPaused = false;
     }
 }

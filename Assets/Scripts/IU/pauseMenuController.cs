@@ -27,6 +27,7 @@ public class pauseMenuController : MonoBehaviour
     }
     public void resume()
     {
+        sceneController.GetComponent<SceneController>().unPausePlayer();
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         IsPaused = false;

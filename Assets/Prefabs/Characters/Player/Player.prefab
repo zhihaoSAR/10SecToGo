@@ -110,6 +110,7 @@ MonoBehaviour:
     type: 3}
   explosivo: {fileID: 4519382101323806575, guid: 9ae9caf429b1ae2449947a8324f2524f,
     type: 3}
+  SceneController: {fileID: 0}
 --- !u!50 &2108093607362305744
 Rigidbody2D:
   serializedVersion: 4
