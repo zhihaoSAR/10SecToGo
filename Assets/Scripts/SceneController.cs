@@ -28,6 +28,7 @@ public class SceneController : MonoBehaviour
     //GUI
     public GameObject GUI,MenuEntreRondas,MenuMuerte;
     private GUImanager gui;
+    public bool Paused = false;
     void Start()
     {
         Modificador m = new Modificador();
@@ -49,7 +50,6 @@ public class SceneController : MonoBehaviour
         //GUI
         gui = GUI.GetComponent<GUImanager>();
         gui.UpdateRonda(round);
-
         StartCoroutine("Spawn");
 
     }
@@ -108,11 +108,13 @@ public class SceneController : MonoBehaviour
     }
     void ActivarMenuEntreRondas()
     {
+        Paused = true;
         MenuEntreRondas.SetActive(true);
         Time.timeScale = 0f;
     }
     public void siguienteRonda()
     {
+        Paused = false;
         MenuEntreRondas.SetActive(false);
         Time.timeScale = 1f;
     }
@@ -126,7 +128,7 @@ public class SceneController : MonoBehaviour
 
     }
 
-    void NextRound()
+    public void NextRound()
     {
         time = 10;
         enemiesDead = 0;
@@ -177,7 +179,9 @@ public class SceneController : MonoBehaviour
     }
     public IEnumerator deadMenu()
     {
+        Paused = true;
         yield return new WaitForSeconds(1);
+        
         Time.timeScale = 0f;
         MenuMuerte.SetActive(true);
 
