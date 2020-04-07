@@ -41,10 +41,11 @@ public class Enemy : MonoBehaviour
     {
         if(!immune)
         {
+            immune = true;
             health -= playerDamage;
             if (health > 0)
             {
-                immune = true;
+                
 
                 sprite.color = Color.red;
                 StartCoroutine("resetDamegeEffect");
