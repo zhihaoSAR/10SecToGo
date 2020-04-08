@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Attack_E
   - Obstacle
+  - PowerUp
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Tilemap_base
   - Tilemap_objects
   - Character
-  - 
+  - PowUp
   - 
   - 
   - 

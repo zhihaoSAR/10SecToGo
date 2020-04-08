@@ -14,15 +14,18 @@ public class Player : MonoBehaviour
     const float DASH_SPEED = 15;
     const float DASH_TIME = 0.1f; //segundos
     const int MUNICION_NUM = 5;
-    const float MUNICION_COOLDOWN = 1f; //segundos
+    const float MUNICION_COOLDOWN = .8f; //segundos
     const int EXPLOSIVO_NUM = 3;
-    const float EXPLOSIVO_COOLDOWN = 3f; //segundos
+    const float EXPLOSIVO_COOLDOWN = 1.5f; //segundos
     const float IMMUNE_TIME = 1f;
     const float EFFECT_TIME = 0.1f;
 
     public float speed = 5;
+
+
     public float health = 1;
-    public float damage = 1;
+
+
 
     [SerializeField]
     AudioClip dashAudio;
@@ -40,14 +43,15 @@ public class Player : MonoBehaviour
     public Municion municion;
     public Explosivo explosivo;
     public Transform LanzarMin, LanzarMax;
-    public SceneController SceneController;
+    public SceneController controller;
 
 
     Municion[] municiones;
+    float time_atk_distancia = 0;
     Explosivo[] explosivos;
+    float time_atk_explosive = 0;
     Attack attack;
     bool canAttack = true, immune = false;
-    bool infect;
     Rigidbody2D rb;
     SpriteRenderer sprite;
     Camera mainC;
@@ -56,6 +60,14 @@ public class Player : MonoBehaviour
     bool isPaused = false;
     Vector2 min, max;
 
+
+    public void initSetting()
+    {
+        time_atk_distancia = 0;
+        time_atk_explosive = 0;
+        attack = new Attack(Dash);
+        health = 1;
+    }
 
     void Start()
     {
@@ -69,6 +81,7 @@ public class Player : MonoBehaviour
         min = LanzarMin.position;
         max = LanzarMax.position;
     }
+    /*
     public void InitPlayer(Modificador mod)
     {
         health = 1;
@@ -109,6 +122,24 @@ public class Player : MonoBehaviour
             }
         }
 
+
+    }*/
+
+    public void InitPlayer(SceneController c)
+    {
+        controller = c;
+        health = 1;
+        attack = new Attack(Dash);
+        municiones = new Municion[MUNICION_NUM];
+        for (int i = 0; i < MUNICION_NUM; i++)
+        {
+            municiones[i] = Instantiate<Municion>(municion);
+        }
+        explosivos = new Explosivo[EXPLOSIVO_NUM];
+        for (int i = 0; i < EXPLOSIVO_NUM; i++)
+        {
+            explosivos[i] = Instantiate<Explosivo>(explosivo);
+        }
 
     }
     void Update()
@@ -248,7 +279,81 @@ public class Player : MonoBehaviour
             }
         }
     }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.CompareTag("PowerUp"))
+        {
+            switch (col.GetComponent<PowerUp>().effect)
+            {
+                case Effect.MAS_VIDA:
+                    health++;
+                    break;
+                case Effect.MAS_TIEMPO:
+                    controller.time += 2;
+                    break;
+                case Effect.MAS_TIEMPO_MATAR:
+                    controller.masTimepoMatar();
+                    break;
+                case Effect.MAS_DANYO:
+                    controller.masDanyo();
+                    break;
+                case Effect.DISTANTIA:
+                    cambiaAtkDistancia();
+                    break;
+                case Effect.EXPLOTION:
+                    cambiaAtkExplosive();
+                    break;
+                case Effect.EXPLOSIVO:
+                    controller.activarExplosivo();
+                    break;
+                case Effect.ZOMBIFICAR:
+                    controller.activarZombificar();
+                    break;
+            }
+            Destroy(col.gameObject);
+        }
+    }
+    void cambiaAtkExplosive()
+    {
+        if (time_atk_distancia <= 0)
+        {
+            attack = new Attack(Explosive);
+            time_atk_explosive = 5;//duracion del modificador
+            time_atk_distancia = 0;
+            StartCoroutine("resetAtk");
+        }
+        else
+        {
+            time_atk_explosive = 5;
+        }
+    }
 
+    void cambiaAtkDistancia()
+    {
+        if (time_atk_distancia <= 0)
+        {
+            attack = new Attack(AtkDistantia);
+            time_atk_distancia = 5;//duracion del modificador
+            time_atk_explosive = 0;
+            StartCoroutine("resetAtk");
+        }
+        else
+        {
+            time_atk_distancia = 5;
+        }
+    }
+    IEnumerator resetAtk()
+    {
+        while (time_atk_distancia > 0 ||time_atk_explosive  > 0)
+        {
+            yield return null;
+            time_atk_distancia -= Time.deltaTime;
+            time_atk_explosive -= Time.deltaTime;
+        }
+        attack = new Attack(Dash);
+    }
+
+    
 
     public void receiveDamage()
     {
@@ -260,6 +365,7 @@ public class Player : MonoBehaviour
                 sprite.color = Color.red;
                 StartCoroutine("resetDamegeEffect");
                 StartCoroutine("resetImmune");
+                
             }
             else
             {
@@ -278,7 +384,7 @@ public class Player : MonoBehaviour
             audio.Stop();
             audio.PlayOneShot(screamAudio) ;
             anim.SetTrigger("death");
-            StartCoroutine(SceneController.deadMenu());
+            StartCoroutine(controller.deadMenu());
             
         }
         

@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public enum Ataque {DASH,DISTANTIA,EXPLOTION }
-public enum Pasivo {MAS_TIEMPO_INI,MAS_TIEMPO_MATAR,EXPLOSIVO,MAS_DANYO,MAS_VIDA }
+
+public enum Effect {  DISTANTIA, EXPLOTION,MAS_TIEMPO, MAS_TIEMPO_MATAR,EXPLOSIVO,MAS_DANYO,MAS_VIDA,ZOMBIFICAR }
 public class Modificador 
 {
-    public Ataque Ataque;
-
-    public Pasivo[] pasivos = new Pasivo[2];
-
-
-    
+    public static Effect RandomMod()
+    {
+        var rnd = new System.Random();
+        return (Effect)rnd.Next(Enum.GetNames(typeof(Effect)).Length);
+    }
 }

@@ -6,14 +6,11 @@ using System;
 
 public class SceneController : MonoBehaviour
 {
-    //---------------Posible van ser quitado---------------------
-    public Ataque a;
-    public Pasivo p1,p2;
-
 
     //---------------Variables no van quitar----------------------------
     public Player player;
-    
+    public float damage=1;
+    float time_mas_damage =0 ;
     public Transform[] SpawnPoints;
     public LevelConfig config;
     int round;
@@ -21,8 +18,16 @@ public class SceneController : MonoBehaviour
     int enemiesDead;
     float[] probability;
     int enemyNum;
+
+
+
+    //--------------varibale de modificador---------------------------
     float extraTime;
-    bool explosivo, zombificar;
+    float time_mas_tiempo_matar = 0;
+    [HideInInspector]
+    public bool explosivo, zombificar;
+    float time_explosivo = 0, time_zombificar = 0;
+
 
     public float time;
     //GUI
@@ -31,10 +36,6 @@ public class SceneController : MonoBehaviour
     public bool Paused = false;
     void Start()
     {
-        Modificador m = new Modificador();
-        m.Ataque = a;// Ataque.DISTANTIA;
-        m.pasivos[0] = p1;
-        m.pasivos[1] = p2;
 
         probability = new float[config.Enemies.Length];
         for(int i = 0;i< config.Enemies.Length;i++)
@@ -46,7 +47,8 @@ public class SceneController : MonoBehaviour
         enemiesDead = 0;
         enemiesSpawned = 0;
 
-        InitialModifier(m);
+        initSetting();
+        player.InitPlayer(this);
         //GUI
         gui = GUI.GetComponent<GUImanager>();
         gui.UpdateRonda(round);
@@ -54,28 +56,19 @@ public class SceneController : MonoBehaviour
 
     }
 
-    void InitialModifier(Modificador m)
+    void initSetting()
     {
         time = 10;
+        time_mas_tiempo_matar = 0;
         extraTime = 0;
+        time_explosivo = 0;
         explosivo = false;
-        for (int i = 0; i < 2; i++)
-        {
-            switch (m.pasivos[i])
-            {
-                case Pasivo.MAS_TIEMPO_INI:
-                    time += 2;
-                    continue;
-                case Pasivo.MAS_TIEMPO_MATAR:
-                    extraTime = 0.5f;
-                    continue;
-                case Pasivo.EXPLOSIVO:
-                    explosivo = true;
-                    continue;
-            }
-        }
-
-        player.InitPlayer(m);
+        time_zombificar = 0;
+        zombificar = false;
+        time_mas_damage = 0;
+        damage = 1;
+        player.initSetting();
+        
     }
 
     void Update()
@@ -131,10 +124,10 @@ public class SceneController : MonoBehaviour
 
     public void NextRound()
     {
-        time = 10;
+        
         enemiesDead = 0;
         enemiesSpawned = 0;
-        time = 10;
+        player.initSetting();
         //GUI
         gui.UpdateRonda(round);
 
@@ -171,14 +164,115 @@ public class SceneController : MonoBehaviour
                 Enemy e = Instantiate<Enemy>(config.Enemies[enemyInd]);
                 e.transform.position = spawnPos;
                 e.controller = this;
-                e.playerDamage = player.damage;
-                e.explo = explosivo;
-                e.zombificar = zombificar;
                 enemiesSpawned++;
             }
             yield return new WaitForSeconds(config.SpawnTime);
         }
     }
+
+    public void masDanyo()
+    {
+        if (time_mas_damage <= 0)
+        {
+            damage = 2;
+            time_mas_damage = 3;//duracion del modificador
+            StartCoroutine("resetMasDanyo");
+        }
+        else
+        {
+            time_mas_damage = 3;
+        }
+
+    }
+    IEnumerator resetMasDanyo()
+    {
+        while (time_mas_damage > 0)
+        {
+            yield return null;
+            time_mas_damage -= Time.deltaTime;
+        }
+        damage = 1;
+    }
+
+    public void masTimepoMatar()
+    {
+        if (time_mas_tiempo_matar <= 0)
+        {
+            time_mas_tiempo_matar = 3;//duracion del modificador
+            extraTime = 0.5f;
+            StartCoroutine("resetMasTiempoMatar");
+        }
+        else
+        {
+            time_mas_tiempo_matar = 3;//duracion del modificador
+        }
+
+    }
+    IEnumerator resetMasTiempoMatar()
+    {
+
+        while (time_mas_tiempo_matar > 0)
+        {
+            yield return null;
+            time_mas_tiempo_matar -= Time.deltaTime;
+        }
+
+        extraTime = 0;
+    }
+
+    public void activarZombificar()
+    {
+        if (time_zombificar <= 0)
+        {
+            time_zombificar = 2;//duracion del modificador
+            zombificar = true;
+            StartCoroutine("resetZombificar");
+        }
+        else
+        {
+            time_zombificar = 2;//duracion del modificador
+        }
+
+    }
+    IEnumerator resetZombificar()
+    {
+
+        while (time_zombificar > 0)
+        {
+            yield return null;
+            time_zombificar -= Time.deltaTime;
+        }
+
+        zombificar = false; ;
+    }
+
+    public void activarExplosivo()
+    {
+        if(time_explosivo <= 0)
+        {
+            time_explosivo = 2;//duracion del modificador
+            explosivo = true;
+            StartCoroutine("resetExplosivo");
+        }
+        else
+        {
+            time_explosivo = 2;//duracion del modificador
+        }
+        
+    }
+    IEnumerator resetExplosivo()
+    {
+
+        while (time_explosivo > 0)
+        {
+            yield return null;
+            time_explosivo -= Time.deltaTime;
+        }
+
+        explosivo = false; ;
+    }
+
+
     public IEnumerator deadMenu()
     {
         Paused = true;
