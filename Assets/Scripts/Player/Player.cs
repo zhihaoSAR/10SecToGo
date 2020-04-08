@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
 
     public Municion municion;
     public Explosivo explosivo;
+    public Transform LanzarMin, LanzarMax;
     public SceneController SceneController;
 
 
@@ -53,6 +54,7 @@ public class Player : MonoBehaviour
     private Animator anim;
     AudioSource audio;
     bool isPaused = false;
+    Vector2 min, max;
 
 
     void Start()
@@ -64,6 +66,8 @@ public class Player : MonoBehaviour
         audio = GetComponent<AudioSource>();
         audio.clip = walkAudio;
         audio.Play();
+        min = LanzarMin.position;
+        max = LanzarMax.position;
     }
     public void InitPlayer(Modificador mod)
     {
@@ -210,6 +214,7 @@ public class Player : MonoBehaviour
     void Explosive(Vector3 mousePos)
     {
         int i;
+        recalculateMousePos(ref mousePos);
         for (i = 0; i < EXPLOSIVO_NUM; i++)
         {
             if (!explosivos[i].gameObject.activeSelf)
@@ -302,4 +307,49 @@ public class Player : MonoBehaviour
     {
         isPaused = false;
     }
+
+
+    public float GetIntersectionPointCoordinates(Vector2 A1, Vector2 A2, Vector2 B1, Vector2 B2)
+    {
+        float tmp = (B2.x - B1.x) * (A2.y - A1.y) - (B2.y - B1.y) * (A2.x - A1.x);
+
+
+        float mu = ((A1.x - B1.x) * (A2.y - A1.y) - (A1.y - B1.y) * (A2.x - A1.x)) / tmp;
+
+        return mu;
+        
+    }
+
+    void recalculateMousePos(ref Vector3 mousePos)
+    {
+        float mu;
+        Vector2 p = transform.position;
+        if (mousePos.x < min.x)
+        {
+            mu = GetIntersectionPointCoordinates(min, new Vector2(min.x, max.y), mousePos, p);
+            mousePos.x = mousePos.x + (p.x - mousePos.x) * mu;
+            mousePos.y = mousePos.y + (p.y - mousePos.y) * mu;
+        }
+        else if(mousePos.x > max.x)
+        {
+            mu = GetIntersectionPointCoordinates(max, new Vector2(max.x, min.y), mousePos, p);
+            mousePos.x = mousePos.x + (p.x - mousePos.x) * mu;
+            mousePos.y = mousePos.y + (p.y - mousePos.y) * mu;
+        }
+
+        if (mousePos.y < min.y)
+        {
+            mu = GetIntersectionPointCoordinates(min, new Vector2(max.x, min.y), mousePos, p);
+            mousePos.x = mousePos.x + (p.x - mousePos.x) * mu;
+            mousePos.y = mousePos.y + (p.y - mousePos.y) * mu;
+        }
+        else if (mousePos.y > max.y)
+        {
+            mu = GetIntersectionPointCoordinates(max, new Vector2(min.x, max.y), mousePos, p);
+            mousePos.x = mousePos.x + (p.x - mousePos.x) * mu;
+            mousePos.y = mousePos.y + (p.y - mousePos.y) * mu;
+        }
+
+    }
+
 }
