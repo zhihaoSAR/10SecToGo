@@ -5,14 +5,13 @@ using UnityEngine.UI;
 public class GUImanager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject cronometro,puntuacion,ronda, sceneM;
+    public GameObject cronometro,ronda, sceneM;
     private SceneController SceneManager;
-    private TMPro.TextMeshProUGUI c, p, r;
+    private TMPro.TextMeshProUGUI c, r;
     string Nronda="";
     void Start()
     {
         c = cronometro.GetComponent<TMPro.TextMeshProUGUI>();
-        p = puntuacion.GetComponent<TMPro.TextMeshProUGUI>();
         r = ronda.GetComponent<TMPro.TextMeshProUGUI>();
         SceneManager = sceneM.GetComponent<SceneController>();
     }
@@ -28,10 +27,6 @@ public class GUImanager : MonoBehaviour
 
     public void UpdateRonda(int numRonda)
     {
-        
-       
-        Nronda= "Ronda " + numRonda.ToString();
-
-        
+        Nronda= "Ronda " + numRonda.ToString();   
     }
 }
