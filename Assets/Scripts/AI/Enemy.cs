@@ -13,7 +13,10 @@ public class Enemy : MonoBehaviour
     Animator anim;
     bool immune = false;
     public Zone toxic;
-    
+
+    [Tooltip("probabilidad de 0-1.")]
+    public float probabilityPowerUp;
+    public PowerUp powerUp;
 
     void Start()
     {
@@ -30,6 +33,10 @@ public class Enemy : MonoBehaviour
         {
             toxic = Instantiate<Zone>(toxic);
             toxic.initialize(transform.position);
+        }
+        if(Random.Range(0f,1f) < probabilityPowerUp )
+        {
+            Instantiate<PowerUp>(powerUp, transform.position, Quaternion.identity);
         }
     }
     public void DestroyEnemy() { Destroy(gameObject); }

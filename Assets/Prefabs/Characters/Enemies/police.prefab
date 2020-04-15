@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 162353495
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -7408681782762292377, guid: 1947cac16bfa24094a35cd8eebdf1b35,
     type: 3}
@@ -152,10 +152,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  playerDamage: 0
   maxHealth: 1
   immuneTime: 0.5
   effectTime: 0.1
+  toxic: {fileID: 0}
+  probabilityPowerUp: 0.5
+  powerUp: {fileID: 0}
 --- !u!61 &1795000183491257815
 BoxCollider2D:
   m_ObjectHideFlags: 0
