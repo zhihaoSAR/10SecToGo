@@ -67,13 +67,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  playerDamage: 0
-  explo: 0
-  zombificar: 0
   maxHealth: 1
   immuneTime: 0.5
   effectTime: 0.1
   toxic: {fileID: -3581589119061459104, guid: 5534ca5a3815f7141ad08a32c1cdb9a0, type: 3}
+  probabilityPowerUp: 0
 --- !u!50 &6236621211851283531
 Rigidbody2D:
   serializedVersion: 4
