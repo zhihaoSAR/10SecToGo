@@ -6,16 +6,11 @@ public class GUImanager : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject cronometro,ronda, sceneM,PowerUpsZone,powerObject;
-    private List<powers> powersUps = new List<powers>();
+    private List<GameObject> powersUps = new List<GameObject>();
     private SceneController SceneManager;
     private TMPro.TextMeshProUGUI c, r,v;
     string Nronda="",vida="1";
-    struct powers
-    {
-        public int time,totalTime;
-        public Effect id;
-        public GameObject PU;
-    } 
+ 
     void Start()
     {
         c = cronometro.GetComponent<TMPro.TextMeshProUGUI>();
@@ -26,6 +21,7 @@ public class GUImanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //revisarTiempos();
         if (SceneManager.time > 0)
             c.text = SceneManager.time.ToString("0.0");
         else c.text = 0.ToString();
@@ -34,29 +30,30 @@ public class GUImanager : MonoBehaviour
 
     public void UpdateRonda(int numRonda)
     {
-        Nronda= "Ronda " + numRonda.ToString();   
+       
+        Nronda = "Ronda " + numRonda.ToString();   
     }
     public void UpdateVida(int num)
     {
         vida = num.ToString();
     }
-    public void createPowerUp(int time,Effect name)
+    public void createPowerUp(float time,Effect name)
     {
         bool esta = false;
    
         powersUps.ForEach(x=> {
-            if (x.id.Equals(name)){ esta = true;x.time = time; } //actualizar tiempo
+            powerUpVariables aux = x.GetComponent<powerUpVariables>();
+            if (aux.id.Equals(name)) { esta = true;aux.setTime(time); Debug.Log("creado"); } //actualizar tiempo
                 
                 });
         if (!esta)//crear objeto
         {
-            powers p; p.time = time; p.totalTime = time; p.id = name; p.PU = Instantiate(powerObject,PowerUpsZone.transform)as GameObject;
-           // p.PU.transform.SetParent(PowerUpsZone.transform);
-           // p.PU.transform.localScale.Set(1f, 1f, 1f);
-
-            powersUps.Add(p);
+            GameObject este = Instantiate(powerObject, PowerUpsZone.transform) as GameObject;
+            powerUpVariables aux = este.GetComponent<powerUpVariables>();
+            aux.setTime(time);aux.id = name;
+            powersUps.Add( este);
         }
-        
+       
+       
     }
-
 }
