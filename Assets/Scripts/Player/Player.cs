@@ -38,7 +38,9 @@ public class Player : MonoBehaviour
     public State state = State.RUN;
     [HideInInspector]
     public bool attacking = false;
-    
+    //GUI
+    public GameObject GUI;
+    private GUImanager guimanager;
 
     public Municion municion;
     public Explosivo explosivo;
@@ -80,6 +82,7 @@ public class Player : MonoBehaviour
         audio.Play();
         min = LanzarMin.position;
         max = LanzarMax.position;
+        guimanager = GUI.GetComponent<GUImanager>();
     }
     /*
     public void InitPlayer(Modificador mod)
@@ -298,6 +301,7 @@ public class Player : MonoBehaviour
                     controller.masDanyo();
                     break;
                 case Effect.DISTANTIA:
+                    guimanager.createPowerUp(5,Effect.DISTANTIA);
                     cambiaAtkDistancia();
                     break;
                 case Effect.EXPLOTION:
