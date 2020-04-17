@@ -69,6 +69,7 @@ public class Player : MonoBehaviour
         time_atk_explosive = 0;
         attack = new Attack(Dash);
         health = 1;
+        guimanager.UpdateVida(health);
     }
 
     void Start()
@@ -132,6 +133,7 @@ public class Player : MonoBehaviour
     {
         controller = c;
         health = 1;
+        guimanager.UpdateVida(health);
         attack = new Attack(Dash);
         municiones = new Municion[MUNICION_NUM];
         for (int i = 0; i < MUNICION_NUM; i++)
@@ -161,6 +163,7 @@ public class Player : MonoBehaviour
         if(Input.GetKey(KeyCode.C))
         {
             health = 999;
+            
         }
     }
 
@@ -286,19 +289,23 @@ public class Player : MonoBehaviour
     {
         if(col.CompareTag("PowerUp"))
         {
+            
             switch (col.GetComponent<PowerUp>().effect)
             {
                 case Effect.MAS_VIDA:
                     health++;
+                    guimanager.UpdateVida(health);
                     break;
                 case Effect.MAS_TIEMPO:
                     controller.time += 2;
                     break;
                 case Effect.MAS_TIEMPO_MATAR:
                     controller.masTimepoMatar();
+                    guimanager.createPowerUp(3, Effect.MAS_TIEMPO_MATAR);
                     break;
                 case Effect.MAS_DANYO:
                     controller.masDanyo();
+                    guimanager.createPowerUp(3, Effect.MAS_DANYO);
                     break;
                 case Effect.DISTANTIA:
                     guimanager.createPowerUp(5,Effect.DISTANTIA);
@@ -306,12 +313,15 @@ public class Player : MonoBehaviour
                     break;
                 case Effect.EXPLOTION:
                     cambiaAtkExplosive();
+                    guimanager.createPowerUp(5, Effect.EXPLOTION);
                     break;
                 case Effect.EXPLOSIVO:
                     controller.activarExplosivo();
+                    guimanager.createPowerUp(2, Effect.EXPLOSIVO);
                     break;
                 case Effect.ZOMBIFICAR:
                     controller.activarZombificar();
+                    guimanager.createPowerUp(2, Effect.ZOMBIFICAR);
                     break;
             }
             Destroy(col.gameObject);
@@ -365,6 +375,7 @@ public class Player : MonoBehaviour
         {
             if (--health > 0)
             {
+                guimanager.UpdateVida(health);
                 immune = true;
                 sprite.color = Color.red;
                 StartCoroutine("resetDamegeEffect");

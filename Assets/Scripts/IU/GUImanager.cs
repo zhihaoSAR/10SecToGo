@@ -5,16 +5,18 @@ using UnityEngine.UI;
 public class GUImanager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject cronometro,ronda, sceneM,PowerUpsZone,powerObject;
+    public GameObject cronometro, ronda, hearts, sceneM,PowerUpsZone,powerObject;
     private List<GameObject> powersUps = new List<GameObject>();
     private SceneController SceneManager;
     private TMPro.TextMeshProUGUI c, r,v;
-    string Nronda="",vida="1";
+    [SerializeField] private Sprite[] images;
+    string Nronda ="1",vida="1";
  
     void Start()
     {
         c = cronometro.GetComponent<TMPro.TextMeshProUGUI>();
         r = ronda.GetComponent<TMPro.TextMeshProUGUI>();
+        v = hearts.GetComponent<TMPro.TextMeshProUGUI>();
         SceneManager = sceneM.GetComponent<SceneController>();
     }
 
@@ -26,6 +28,7 @@ public class GUImanager : MonoBehaviour
             c.text = SceneManager.time.ToString("0.0");
         else c.text = 0.ToString();
         r.text = Nronda;
+        v.text = vida;
     }
 
     public void UpdateRonda(int numRonda)
@@ -33,7 +36,7 @@ public class GUImanager : MonoBehaviour
        
         Nronda = "Ronda " + numRonda.ToString();   
     }
-    public void UpdateVida(int num)
+    public void UpdateVida(float num)
     {
         vida = num.ToString();
     }
@@ -50,7 +53,7 @@ public class GUImanager : MonoBehaviour
         {
             GameObject este = Instantiate(powerObject, PowerUpsZone.transform) as GameObject;
             powerUpVariables aux = este.GetComponent<powerUpVariables>();
-            aux.setTime(time);aux.id = name;
+            aux.setTime(time);aux.id = name;aux.GetComponentInChildren<Image>().sprite= images[(int)name];
             powersUps.Add( este);
         }
        

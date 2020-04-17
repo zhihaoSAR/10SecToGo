@@ -124,7 +124,7 @@ public class SceneController : MonoBehaviour
 
     public void NextRound()
     {
-        
+        time = 10f;
         enemiesDead = 0;
         enemiesSpawned = 0;
         player.initSetting();
