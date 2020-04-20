@@ -1,7 +1,223 @@
 fileFormatVersion: 2
 guid: 7a8223cbb685643f09d93606bb46cceb
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8062135942670771080
+    second: mosso_F1_walk1
+  - first:
+      213: -5157321853308809564
+    second: mosso_F1_walk2
+  - first:
+      213: -458888609609312806
+    second: mosso_F1_walk3
+  - first:
+      213: 898243509106723041
+    second: mosso_F1_walk4
+  - first:
+      213: 3349007738738235516
+    second: mosso_F1_walk5
+  - first:
+      213: 5753934202992285897
+    second: mosso_F1_walk6
+  - first:
+      213: 7735339661855183624
+    second: mosso_F1_walk7
+  - first:
+      213: -4533840719378547911
+    second: mosso_F1_walk8
+  - first:
+      213: -7434766432111264387
+    second: mosso_F1_shoot1
+  - first:
+      213: 7975754354994132873
+    second: mosso_F1_shoot2
+  - first:
+      213: 8991330113193468038
+    second: mosso_F1_shoot3
+  - first:
+      213: 7616927307649917934
+    second: mosso_F1_shoot4
+  - first:
+      213: 283708633709966245
+    second: mosso_F1_shoot5
+  - first:
+      213: -8113331623821221406
+    second: mosso_F1_shoot6
+  - first:
+      213: -4383199046765391424
+    second: mosso_F1_shoot7
+  - first:
+      213: -5486977448627274625
+    second: mosso_F1_shoot8
+  - first:
+      213: 7433272369893399522
+    second: mosso_F1_shoot9
+  - first:
+      213: -1402161678483350327
+    second: mosso_spritesheet_17
+  - first:
+      213: 4376423736622058684
+    second: mosso_F1_idle1
+  - first:
+      213: -5905434198925935282
+    second: mosso_F1_idle2
+  - first:
+      213: 441087260975422131
+    second: mosso_F1_idle3
+  - first:
+      213: -2359087204055856113
+    second: mosso_F1_idle4
+  - first:
+      213: 4438206888988224352
+    second: mosso_spritesheet_22
+  - first:
+      213: 5655311520086434427
+    second: mosso_spritesheet_23
+  - first:
+      213: 7482356318083555275
+    second: mosso_spritesheet_24
+  - first:
+      213: -7155792469270571479
+    second: mosso_spritesheet_25
+  - first:
+      213: -2688352251376389360
+    second: mosso_spritesheet_26
+  - first:
+      213: -1232401897564682478
+    second: mosso_spritesheet_27
+  - first:
+      213: -2787120030789813222
+    second: mosso_spritesheet_28
+  - first:
+      213: 2463350429163929634
+    second: mosso_spritesheet_29
+  - first:
+      213: 7926726930088137436
+    second: mosso_spritesheet_30
+  - first:
+      213: -7829118753081320385
+    second: mosso_spritesheet_31
+  - first:
+      213: -7888062758883219108
+    second: mosso_spritesheet_32
+  - first:
+      213: -43971101726462030
+    second: mosso_spritesheet_33
+  - first:
+      213: -1099567363372115249
+    second: mosso_spritesheet_34
+  - first:
+      213: -5447860223133350151
+    second: mosso_spritesheet_35
+  - first:
+      213: -3180277286901675961
+    second: mosso_spritesheet_36
+  - first:
+      213: -3317342353142218228
+    second: mosso_spritesheet_37
+  - first:
+      213: -3198587760911258973
+    second: mosso_spritesheet_38
+  - first:
+      213: 1959915546485794876
+    second: mosso_F2_walk1
+  - first:
+      213: -9031394582203578824
+    second: mosso_F2_walk2
+  - first:
+      213: 8182650982562343017
+    second: mosso_F2_walk3
+  - first:
+      213: -3280648047169874101
+    second: mosso_F2_walk4
+  - first:
+      213: 5788456927218302484
+    second: mosso_F2_walk5
+  - first:
+      213: -8862244923845043702
+    second: mosso_F2_walk6
+  - first:
+      213: 2648642335101350358
+    second: mosso_F2_walk7
+  - first:
+      213: -4281845401979101173
+    second: mosso_F2_walk8
+  - first:
+      213: -3566503744102525323
+    second: mosso_F2_shoot1
+  - first:
+      213: -3897457964965898211
+    second: mosso_F2_shoot2
+  - first:
+      213: 9174925023826879205
+    second: mosso_F2_shoot3
+  - first:
+      213: 7664809656224948223
+    second: mosso_F2_shoot4
+  - first:
+      213: -2697554889973793243
+    second: mosso_F2_idle1
+  - first:
+      213: 8761892694214928875
+    second: mosso_F2_idle2
+  - first:
+      213: -1122430325310549770
+    second: mosso_F2_idle3
+  - first:
+      213: 233171954392225121
+    second: mosso_F2_idle4
+  - first:
+      213: 3143943225478507793
+    second: mosso_F2_idle5
+  - first:
+      213: 5807588450504988005
+    second: mosso_F2_idle6
+  - first:
+      213: -4818001519759557382
+    second: mosso_death1
+  - first:
+      213: -6373307694706683265
+    second: mosso_death2
+  - first:
+      213: 7850155633063885001
+    second: mosso_death3
+  - first:
+      213: 3458505275958783278
+    second: mosso_death4
+  - first:
+      213: -465865822225105560
+    second: mosso_death5
+  - first:
+      213: 3429790655225968451
+    second: mosso_death6
+  - first:
+      213: -6547385597308595085
+    second: mosso_death7
+  - first:
+      213: 9064335750852904991
+    second: mosso_death8
+  - first:
+      213: -1070147676751170015
+    second: mosso_F1toF2_1
+  - first:
+      213: -4974692531021717916
+    second: mosso_F1toF2_2
+  - first:
+      213: 8375724852336701073
+    second: mosso_F1toF2_3
+  - first:
+      213: -8810637962845910890
+    second: mosso_F1toF2_4
+  - first:
+      213: -9078244450504836450
+    second: mosso_F1toF2_5
+  - first:
+      213: -4670518331726724312
+    second: mosso_F1toF2_6
+  - first:
+      213: -6197751429366163895
+    second: mosso_F1toF2_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +256,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -84,7 +300,1519 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: mosso_F1_walk1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 536
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6a82ff044264697b34ff25bae5e8ca
+      internalID: 8062135942670771080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_walk2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 536
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a11f6ac795e4eecba2a129fa8879a0
+      internalID: -5157321853308809564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_walk3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 536
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1336547066d46649fb74ca314937d0
+      internalID: -458888609609312806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_walk4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 536
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e82cec482c842d0ab7ab58bfba75cf
+      internalID: 898243509106723041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_walk5
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 536
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a1a611409bb4e8dbe466e5e800949e
+      internalID: 3349007738738235516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_walk6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 536
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d29083fd4aee41d9b59efd9910fd8e4
+      internalID: 5753934202992285897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_walk7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 536
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee6f7eaa2db34091a89c0013d556851
+      internalID: 7735339661855183624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_walk8
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 536
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7be019bd7e974253bec52b8efd08fa0
+      internalID: -4533840719378547911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_shoot1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 471
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef90ac881c1a44b69ace95fa751c578c
+      internalID: -7434766432111264387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_shoot2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 474
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94781bbd0003640679788939fc16fd55
+      internalID: 7975754354994132873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_shoot3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 474
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90858b32e9df84164b237808807222b2
+      internalID: 8991330113193468038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_shoot4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 474
+        width: 71
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716a237cd414e4202a794d60fff444f8
+      internalID: 7616927307649917934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_shoot5
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 474
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4668fe281562f48dea6ac47ff7648886
+      internalID: 283708633709966245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_shoot6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 474
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d256bf7d371364422b89d43a46d02e45
+      internalID: -8113331623821221406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_shoot7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 474
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cb08e47797249f1b51ea9a859ee6b4
+      internalID: -4383199046765391424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_shoot8
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 474
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c411225fe3b924086bf604a04c75d9f8
+      internalID: -5486977448627274625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_shoot9
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 474
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544bbe57e960c4d6087a7539189a2f83
+      internalID: 7433272369893399522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 499
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f817c7a9b759e422087e9bc84fe7998b
+      internalID: -1402161678483350327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_idle1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 408
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7026d382c2e6640f4b094168e06d9f27
+      internalID: 4376423736622058684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_idle2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 408
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1623909cbb7ce48109b72ff729b733c7
+      internalID: -5905434198925935282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_idle3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 408
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774c0d27042ce4ed48a3be9ee3140ec2
+      internalID: 441087260975422131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1_idle4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 408
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5e92bf186c34a41887f193780dde80
+      internalID: -2359087204055856113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 345
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6561e2d041c48462a8509217b0400014
+      internalID: 4438206888988224352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 345
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7376d3dcd5f5f40e4923ab19820e74c8
+      internalID: 5655311520086434427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 345
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863b439299e394e64ba20fc282e0ae9b
+      internalID: 7482356318083555275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 346
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f42ab86f19c846f88092e1ca9d52e4a
+      internalID: -7155792469270571479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 345
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39723b8299c19456ba9b92a4a3dd54db
+      internalID: -2688352251376389360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 348
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd735d8db589442a6bff1b01ca361a16
+      internalID: -1232401897564682478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 345
+        width: 39
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f840d85013c4541a1ab3fe2779ff7534
+      internalID: -2787120030789813222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 345
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d70241e405243eaa16df26d6495777
+      internalID: 2463350429163929634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 345
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea64c07b787bd40e0a5c223d46f6d826
+      internalID: 7926726930088137436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 345
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2eabfa992124107a2cb18ba408ff23
+      internalID: -7829118753081320385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 345
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71a7b67d6af24668b332b537b9daaef
+      internalID: -7888062758883219108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 345
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadacb987470e4654ab29cad58ce20d4
+      internalID: -43971101726462030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 345
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e18e972229d4d88b6c20bc6da9d003
+      internalID: -1099567363372115249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 345
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0720e24055540e3b47ae66a4337535
+      internalID: -5447860223133350151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 345
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ecf597cf9c84fb180c001707590081
+      internalID: -3180277286901675961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 345
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bef8aa9eae9541c395ee6792cbde582
+      internalID: -3317342353142218228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 345
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e79417fc2e3477fae6090d9c3c4434
+      internalID: -3198587760911258973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_walk1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 282
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986deee2eb5b64451834bd1527493626
+      internalID: 1959915546485794876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_walk2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 282
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808d9c224356d482a8a66ebc309a216f
+      internalID: -9031394582203578824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_walk3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 282
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d66eeff74cf74d418ef0b4a6cfa06dc
+      internalID: 8182650982562343017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_walk4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 282
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550f8b7ffad204f79a7aea3bf21b4c8c
+      internalID: -3280648047169874101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_walk5
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 282
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611911bfc541d4a59b7dc5728a436199
+      internalID: 5788456927218302484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_walk6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 282
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c58dcfe945c458e919de394b4b150c
+      internalID: -8862244923845043702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_walk7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 282
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01979e937a80f4be2b331200d7ddafa6
+      internalID: 2648642335101350358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_walk8
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 282
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee389750591d4d90b1ccfdd05af48e5
+      internalID: -4281845401979101173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_shoot1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 216
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02efd304f65c4ebe991f68b4692d5b0
+      internalID: -3566503744102525323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_shoot2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 216
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d0af222a079446197e5b6ba272bbc4
+      internalID: -3897457964965898211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_shoot3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 216
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5456d35c67444c9a914b64648078515
+      internalID: 9174925023826879205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_shoot4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 216
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb30eb348a34f45869beeee6530b35ff
+      internalID: 7664809656224948223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_idle1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 154
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5944e5bce186b46138f840a2cbea2815
+      internalID: -2697554889973793243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_idle2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 154
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7a0102d84b14d64bdb97da81e231eb
+      internalID: 8761892694214928875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_idle3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 153
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bbd1a32793a446f9a8a7c6a10e0696
+      internalID: -1122430325310549770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_idle4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 153
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96498f009baa44be4a2d45d2fae99c58
+      internalID: 233171954392225121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_idle5
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 149
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0602f5ba06cb475895bd51b770c3736
+      internalID: 3143943225478507793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F2_idle6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 154
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c06dd026c29456ebb1d9bcbd0c9518
+      internalID: 5807588450504988005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_death1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 87
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4428e9e49b9a942a3a2f9a08156c313c
+      internalID: -4818001519759557382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_death2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 84
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a024c2e86c0476086a0f60dcb758d8
+      internalID: -6373307694706683265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_death3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 80
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b3b632ac51b458d83424c4189f3c60
+      internalID: 7850155633063885001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_death4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 79
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9a8aefb7e434e9fb82c1a22a39a4cc
+      internalID: 3458505275958783278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_death5
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 112
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b146afb0b48459f971b1a8b2f3fc3d
+      internalID: -465865822225105560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_death6
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 122
+        width: 54
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a96332000644d3588eeb21828b9e2e
+      internalID: 3429790655225968451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_death7
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 117
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d2fa45d34804727b03fc6b4f37324d
+      internalID: -6547385597308595085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_death8
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 116
+        width: 62
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb24e5e8d5bb499298e1f9dfc9ad075
+      internalID: 9064335750852904991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1toF2_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 16
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec2aecdd934b421b9718005725d6926
+      internalID: -1070147676751170015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1toF2_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 15
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578c19f8857ed4aafbde3619fc86268e
+      internalID: -4974692531021717916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1toF2_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 16
+        width: 71
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2321fb1b258e94375a9547cb7dffa2c2
+      internalID: 8375724852336701073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1toF2_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 23
+        width: 77
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0626208db0efb434b860f8172e6749a9
+      internalID: -8810637962845910890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1toF2_5
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 22
+        width: 80
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9e5348bc857463eac28add327989cd
+      internalID: -9078244450504836450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1toF2_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 18
+        width: 83
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b753e02a806034f1e830b52be54cf585
+      internalID: -4670518331726724312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosso_F1toF2_7
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 18
+        width: 84
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd9b79fb1ea7407ba61acfa3a23046f
+      internalID: -6197751429366163895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
