@@ -6,7 +6,8 @@ public class GUImanager : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject cronometro, ronda, hearts, sceneM,PowerUpsZone,powerObject;
-    private List<GameObject> powersUps = new List<GameObject>();
+    
+    IDictionary<Effect, GameObject> dic = new Dictionary<Effect, GameObject>();
     private SceneController SceneManager;
     private TMPro.TextMeshProUGUI c, r,v;
     [SerializeField] private Sprite[] images;
@@ -42,21 +43,36 @@ public class GUImanager : MonoBehaviour
     }
     public void createPowerUp(float time,Effect name)
     {
-        bool esta = false;
-   
-        powersUps.ForEach(x=> {
-            powerUpVariables aux = x.GetComponent<powerUpVariables>();
-            if (aux.id.Equals(name)) { esta = true;aux.setTime(time); Debug.Log("creado"); } //actualizar tiempo
-                
-                });
-        if (!esta)//crear objeto
-        {
-            GameObject este = Instantiate(powerObject, PowerUpsZone.transform) as GameObject;
-            powerUpVariables aux = este.GetComponent<powerUpVariables>();
-            aux.setTime(time);aux.id = name;aux.GetComponentInChildren<Image>().sprite= images[(int)name];
-            powersUps.Add( este);
+
+        GameObject salida;
+        if(dic.TryGetValue(name, out salida)){
+            salida.GetComponent<powerUpVariables>().setTime(time); Debug.Log("creado");
+        }
+
+        else { 
+        
+            salida = Instantiate(powerObject, PowerUpsZone.transform) as GameObject;
+            powerUpVariables aux = salida.GetComponent<powerUpVariables>();
+            aux.instanciar(name,time, images[(int)name]);
+            aux.GetComponentInChildren<Image>().sprite= images[(int)name];
+            dic.Add(name, salida);
+
         }
        
        
+    }
+    public void Medestruyo(Effect yo)
+    {
+        Debug.Log("ME destruyo"+yo);
+        dic.Remove(yo);
+    }
+    public void destruir(Effect id)
+    {
+        GameObject salida;
+        if (dic.TryGetValue(id, out salida))
+        {
+            Destroy(salida);
+            dic.Remove(id);
+        }
     }
 }

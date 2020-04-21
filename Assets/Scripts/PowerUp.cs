@@ -8,7 +8,7 @@ public class PowerUp : MonoBehaviour
     public float life = 3f;
     void Start()
     {
-        effect = Modificador.RandomMod();
+        //effect = Modificador.RandomMod();
         Invoke("TimeUp", life);
         Invoke("ActivaColision", 1f);
     }

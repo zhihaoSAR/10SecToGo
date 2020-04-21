@@ -69,6 +69,7 @@ public class Player : MonoBehaviour
         time_atk_explosive = 0;
         attack = new Attack(Dash);
         health = 1;
+        guimanager = GUI.GetComponent<GUImanager>();
         guimanager.UpdateVida(health);
     }
 
@@ -289,7 +290,7 @@ public class Player : MonoBehaviour
     {
         if(col.CompareTag("PowerUp"))
         {
-            
+            Debug.Log(col.GetComponent<PowerUp>().effect);
             switch (col.GetComponent<PowerUp>().effect)
             {
                 case Effect.MAS_VIDA:
@@ -309,11 +310,13 @@ public class Player : MonoBehaviour
                     break;
                 case Effect.DISTANTIA:
                     guimanager.createPowerUp(5,Effect.DISTANTIA);
+                    guimanager.destruir(Effect.EXPLOTION);
                     cambiaAtkDistancia();
                     break;
                 case Effect.EXPLOTION:
                     cambiaAtkExplosive();
                     guimanager.createPowerUp(5, Effect.EXPLOTION);
+                    guimanager.destruir(Effect.DISTANTIA);
                     break;
                 case Effect.EXPLOSIVO:
                     controller.activarExplosivo();
@@ -384,6 +387,7 @@ public class Player : MonoBehaviour
             }
             else
             {
+                guimanager.UpdateVida(health);
                 death();
             }
         }
