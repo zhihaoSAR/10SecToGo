@@ -63,7 +63,6 @@ public class GUImanager : MonoBehaviour
     }
     public void Medestruyo(Effect yo)
     {
-        Debug.Log("ME destruyo"+yo);
         dic.Remove(yo);
     }
     public void destruir(Effect id)

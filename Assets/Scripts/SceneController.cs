@@ -51,6 +51,7 @@ public class SceneController : MonoBehaviour
         player.InitPlayer(this);
         //GUI
         gui = GUI.GetComponent<GUImanager>();
+        
         gui.UpdateRonda(round);
         StartCoroutine("Spawn");
 

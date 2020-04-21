@@ -290,7 +290,7 @@ public class Player : MonoBehaviour
     {
         if(col.CompareTag("PowerUp"))
         {
-            Debug.Log(col.GetComponent<PowerUp>().effect);
+            
             switch (col.GetComponent<PowerUp>().effect)
             {
                 case Effect.MAS_VIDA:
