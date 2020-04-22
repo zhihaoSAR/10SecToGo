@@ -100,17 +100,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   health: 1
-  damage: 1
   dashAudio: {fileID: 8300000, guid: 890ae3a2fce085b44a5f4dbb8a6b0300, type: 3}
   walkAudio: {fileID: 8300000, guid: 33d2bc36b52b88745a9be4be5fb4893b, type: 3}
   screamAudio: {fileID: 8300000, guid: 707dee4f50b762a45b42a96c5fc9d106, type: 3}
   state: 0
   attacking: 0
+  GUI: {fileID: 0}
   municion: {fileID: 1870919399226794153, guid: c5ddaf3649b7eb84c8e164d348da94e9,
     type: 3}
   explosivo: {fileID: 4519382101323806575, guid: 9ae9caf429b1ae2449947a8324f2524f,
     type: 3}
-  SceneController: {fileID: 0}
+  LanzarMin: {fileID: 0}
+  LanzarMax: {fileID: 0}
+  controller: {fileID: 0}
 --- !u!50 &2108093607362305744
 Rigidbody2D:
   serializedVersion: 4
@@ -186,7 +188,8 @@ AudioSource:
   m_GameObject: {fileID: 2108093607362305751}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -759912229638553494, guid: b3ac3fc2e76b9b741aadfb02dba77537,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

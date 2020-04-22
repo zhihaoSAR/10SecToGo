@@ -7,7 +7,8 @@ public class pauseMenuController : MonoBehaviour
 {
     public static bool IsPaused = false;
     public string nivel;
-    public GameObject PauseMenuUI,sceneController;
+    public GameObject PauseMenuUI,sceneController,opciones;
+    private GameObject opcionesVolver;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !sceneController.GetComponent<SceneController>().Paused)
@@ -43,4 +44,18 @@ public class pauseMenuController : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(nivel);
     }
+    public void GoOptions(GameObject este)
+    {
+        opcionesVolver = este;
+        este.SetActive(false);
+        opciones.SetActive(true);
+    }
+    public void VolverOptions()
+    {
+        opciones.SetActive(false);
+        opcionesVolver.SetActive(true);
+    }
+
+
+
 }
