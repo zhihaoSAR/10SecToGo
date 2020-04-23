@@ -41,7 +41,7 @@ AnimationClip:
       value: {fileID: 7735339661855183624, guid: 7a8223cbb685643f09d93606bb46cceb,
         type: 3}
     attribute: m_Sprite
-    path: 
+    path: mossoGFX
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 10
@@ -52,7 +52,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 3052797482
       attribute: 0
       script: {fileID: 0}
       typeID: 212

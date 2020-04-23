@@ -31,8 +31,11 @@ AnimationClip:
     - time: 0.75
       value: {fileID: -2359087204055856113, guid: 7a8223cbb685643f09d93606bb46cceb,
         type: 3}
+    - time: 1
+      value: {fileID: 4376423736622058684, guid: 7a8223cbb685643f09d93606bb46cceb,
+        type: 3}
     attribute: m_Sprite
-    path: 
+    path: mossoGFX
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 4
@@ -43,7 +46,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 3052797482
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -54,12 +57,13 @@ AnimationClip:
     - {fileID: -5905434198925935282, guid: 7a8223cbb685643f09d93606bb46cceb, type: 3}
     - {fileID: 441087260975422131, guid: 7a8223cbb685643f09d93606bb46cceb, type: 3}
     - {fileID: -2359087204055856113, guid: 7a8223cbb685643f09d93606bb46cceb, type: 3}
+    - {fileID: 4376423736622058684, guid: 7a8223cbb685643f09d93606bb46cceb, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 1.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

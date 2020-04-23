@@ -7,7 +7,8 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public SceneController controller;
     public float maxHealth,immuneTime = 0.5f,effectTime = 0.1f;
-    float health;
+    [HideInInspector]
+    public float health;
     SpriteRenderer sprite;
     Rigidbody2D rb;
     Animator anim;
@@ -48,9 +49,9 @@ public class Enemy : MonoBehaviour
             health -= controller.damage;
             if (health > 0)
             {
-                
-
-                sprite.color = Color.red;
+                Debug.Log("hit");
+                //sprite.color = Color.red;
+                anim.SetInteger("Life",anim.GetInteger("Life")-1);
                 StartCoroutine("resetDamegeEffect");
                 StartCoroutine("resetImmune");
             }
