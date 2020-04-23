@@ -62,6 +62,10 @@ public class Enemy : MonoBehaviour
         }
         
     }
+    public void ChangeFase()
+    {
+        anim.SetBool("FaseChanged", true);
+    }
     IEnumerator resetImmune()
     {
         yield return new WaitForSeconds(immuneTime);
