@@ -61,3 +61,6 @@ TagManager:
   - name: Characters
     uniqueID: 162353495
     locked: 0
+  - name: powerUp
+    uniqueID: 2487376753
+    locked: 0

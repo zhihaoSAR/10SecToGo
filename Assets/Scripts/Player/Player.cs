@@ -294,7 +294,7 @@ public class Player : MonoBehaviour
             switch (col.GetComponent<PowerUp>().effect)
             {
                 case Effect.MAS_VIDA:
-                    health++;
+                    if (++health > 2) health = 2;
                     guimanager.UpdateVida(health);
                     break;
                 case Effect.MAS_TIEMPO:
@@ -325,6 +325,10 @@ public class Player : MonoBehaviour
                 case Effect.ZOMBIFICAR:
                     controller.activarZombificar();
                     guimanager.createPowerUp(2, Effect.ZOMBIFICAR);
+                    break;
+                case Effect.PARAR_TIEMPO:
+                    controller.activarPararTimepo();
+                    //guimanager.createPowerUp(2, Effect.ZOMBIFICAR);
                     break;
             }
             Destroy(col.gameObject);

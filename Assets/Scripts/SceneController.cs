@@ -9,8 +9,6 @@ public class SceneController : MonoBehaviour
 
     //---------------Variables no van quitar----------------------------
     public Player player;
-    public float damage=1;
-    float time_mas_damage =0 ;
     public Transform[] SpawnPoints;
     public LevelConfig config;
     int round;
@@ -24,9 +22,11 @@ public class SceneController : MonoBehaviour
     //--------------varibale de modificador---------------------------
     float extraTime;
     float time_mas_tiempo_matar = 0;
+    public float damage = 1;
+    float time_mas_damage = 0;
     [HideInInspector]
-    public bool explosivo, zombificar;
-    float time_explosivo = 0, time_zombificar = 0;
+    public bool explosivo, zombificar,pararTiempo;
+    float time_explosivo = 0, time_zombificar = 0,time_pararTiempo = 0;
 
 
     public float time;
@@ -66,6 +66,8 @@ public class SceneController : MonoBehaviour
         explosivo = false;
         time_zombificar = 0;
         zombificar = false;
+        time_pararTiempo = 0;
+        pararTiempo = false;
         time_mas_damage = 0;
         damage = 1;
         player.initSetting();
@@ -125,10 +127,9 @@ public class SceneController : MonoBehaviour
 
     public void NextRound()
     {
-        time = 10f;
         enemiesDead = 0;
         enemiesSpawned = 0;
-        player.initSetting();
+        initSetting();
         //GUI
         gui.UpdateRonda(round);
 
@@ -247,6 +248,32 @@ public class SceneController : MonoBehaviour
         zombificar = false; ;
     }
 
+    public void activarPararTimepo()
+    {
+        if (time_pararTiempo <= 0)
+        {
+            time_pararTiempo = 1;//duracion del modificador
+            pararTiempo = true;
+            StartCoroutine("resetPararTiempo");
+        }
+        else
+        {
+            time_pararTiempo = 1;//duracion del modificador
+        }
+
+    }
+    IEnumerator resetPararTiempo()
+    {
+
+        while (time_pararTiempo > 0)
+        {
+            yield return null;
+            time_pararTiempo -= Time.deltaTime;
+            time += Time.deltaTime;
+        }
+
+        pararTiempo = false; ;
+    }
     public void activarExplosivo()
     {
         if(time_explosivo <= 0)
