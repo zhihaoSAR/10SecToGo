@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
     public Municion municion;
     public Explosivo explosivo;
     public Transform LanzarMin, LanzarMax;
+    [HideInInspector]
     public SceneController controller;
 
 

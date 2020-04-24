@@ -22,13 +22,14 @@ public class SceneController : MonoBehaviour
     //--------------varibale de modificador---------------------------
     float extraTime;
     float time_mas_tiempo_matar = 0;
+    [HideInInspector]
     public float damage = 1;
     float time_mas_damage = 0;
     [HideInInspector]
     public bool explosivo, zombificar,pararTiempo;
     float time_explosivo = 0, time_zombificar = 0,time_pararTiempo = 0;
 
-
+    [HideInInspector]
     public float time;
     //GUI
     public GameObject GUI,MenuEntreRondas,MenuMuerte;
