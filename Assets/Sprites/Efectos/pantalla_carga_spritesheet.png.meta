@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 768ce49278a704203ae488f51a9b27cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3792731628673456821
+    second: pantalla_carga_1
+  - first:
+      213: -7169498335136983193
+    second: pantalla_carga_10
+  - first:
+      213: -1886073584873375347
+    second: pantalla_carga_2
+  - first:
+      213: -742552109129495495
+    second: pantalla_carga_11
+  - first:
+      213: 2892217600982060066
+    second: pantalla_carga_3
+  - first:
+      213: -4133771296452274767
+    second: pantalla_carga_12
+  - first:
+      213: -7280245679908497572
+    second: pantalla_carga_4
+  - first:
+      213: -4971771357194471618
+    second: pantalla_carga_13
+  - first:
+      213: 5358098068931911541
+    second: pantalla_carga_5
+  - first:
+      213: -3206709404825077797
+    second: pantalla_carga_14
+  - first:
+      213: 3796500065780225281
+    second: pantalla_carga_6
+  - first:
+      213: 6567116275935356016
+    second: pantalla_carga_15
+  - first:
+      213: -3863260920768538433
+    second: pantalla_carga_7
+  - first:
+      213: -3204886823437677861
+    second: pantalla_carga_spritesheet_13
+  - first:
+      213: 8464474862136701057
+    second: pantalla_carga_8
+  - first:
+      213: 5736608253418194447
+    second: pantalla_carga_9
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pantalla_carga_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3114
+        width: 2185
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03facdca28f694d1d85925963bf0da64
+      internalID: -3792731628673456821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_10
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 3114
+        width: 2291
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2a759ee4d784cde9e49e5d95f4549c
+      internalID: -7169498335136983193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2755
+        width: 2189
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe58e7a4cf37c418090a646a9652f4b8
+      internalID: -1886073584873375347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_11
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 2725
+        width: 2241
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d63461609524b498f15fe3e6a4c508
+      internalID: -742552109129495495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2360
+        width: 2195
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f62b2b117f9d40c182d03da2d8697a5
+      internalID: 2892217600982060066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_12
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 2336
+        width: 2241
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89c1d7eae5b546c186d980dc5d74aa8
+      internalID: -4133771296452274767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1971
+        width: 2241
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e61eea9a20df459984aa69ad37aaaec
+      internalID: -7280245679908497572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_13
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 1947
+        width: 2241
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e50d80ab6c4b41c88714531cb6cc9bb
+      internalID: -4971771357194471618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1558
+        width: 2241
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0367193455944c2dbd274bb1bd3bd45
+      internalID: 5358098068931911541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_14
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 1575
+        width: 2241
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d516fef47feaf496083b0db740d022e1
+      internalID: -3206709404825077797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1228
+        width: 2241
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b7da176c57f4a019c98e6ee8d8f485
+      internalID: 3796500065780225281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_15
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 1169
+        width: 2241
+        height: 421
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5b6796c891c424e800667fed90aa08
+      internalID: 6567116275935356016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 829
+        width: 2241
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a8f5eb67cf646f2973c81acf9759bc
+      internalID: -3863260920768538433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 779.7778
+        width: 2241
+        height: 389.22223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc4d4c4d1f16435c95e408ed3cd6746
+      internalID: -3204886823437677861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 2241
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402a871d784d548e484345fe9f331e5f
+      internalID: 8464474862136701057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantalla_carga_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 2241
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51adf683edd8845c99ee4b975ee678ee
+      internalID: 5736608253418194447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
