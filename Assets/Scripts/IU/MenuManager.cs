@@ -15,6 +15,18 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+    public void PlayLevel3()
+    {
+        SceneManager.LoadScene("DiseñoLVL3");
+    }
+    public void PlayLevel4()
+    {
+        SceneManager.LoadScene("DiseñoLVL4");
+    }
+    public void PlayLevel5()
+    {
+        SceneManager.LoadScene("DiseñoLVL5");
+    }
     public void QuitGame()
     {
         Application.Quit();

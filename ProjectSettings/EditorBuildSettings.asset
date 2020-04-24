@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Dise\xF1oLVL2.unity"
     guid: 8148510abeceb4265ad0db5196e8818c
+  - enabled: 1
+    path: "Assets/Scenes/Dise\xF1oLVL3.unity"
+    guid: 5cd18e12f92b24e3a8a2293eb23746a7
+  - enabled: 1
+    path: "Assets/Scenes/Dise\xF1oLVL4.unity"
+    guid: 35a6758e8918c488c8dbff32271c3baa
+  - enabled: 1
+    path: "Assets/Scenes/Dise\xF1oLVL5.unity"
+    guid: f4157e28d2e7e4a3b9aeddb3379716dc
   m_configObjects: {}
