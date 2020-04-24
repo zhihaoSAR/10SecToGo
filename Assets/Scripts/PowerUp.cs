@@ -6,11 +6,15 @@ public class PowerUp : MonoBehaviour
 {
     public Effect effect;
     public float life = 3f;
+    Animator animator;
     void Start()
     {
-        //effect = Modificador.RandomMod();
+        animator = GetComponent<Animator>();
+        effect = Modificador.RandomMod();
+        animator.SetInteger("estado", (int)effect);
         Invoke("TimeUp", life);
         Invoke("ActivaColision", 1f);
+        
     }
     void ActivaColision()
     {
