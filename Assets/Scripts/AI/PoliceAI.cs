@@ -12,6 +12,7 @@ public class PoliceAI : MonoBehaviour
     public float stoppingDistance;
     public GameObject bullet;
     public float shootBackForce = 50f;
+    private bool dead = false;
 
     Path path;
     int currentWaypoint = 0;
@@ -82,43 +83,48 @@ public class PoliceAI : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (path == null)
-            return;
-        if (currentWaypoint >= path.vectorPath.Count)
+        if (!dead)
         {
-            reachedEndOfPath = true;
-            return;
-        } else
-        {
-            reachedEndOfPath = false;
-        }
-
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - body.position).normalized * intState;
-        Vector2 force = direction * speed * Time.deltaTime;
-
-        body.AddForce(force*1000);
-
-        float distanceToWaypoint = Vector2.Distance(body.position, path.vectorPath[currentWaypoint]);
-
-        if (distanceToWaypoint < nextWaypointDistance)
-        {
-            currentWaypoint++;
-        }
-        if (state != State.Flee)
-        {
-            if (body.velocity.x >= .1f)
+            if (path == null)
+                return;
+            if (currentWaypoint >= path.vectorPath.Count)
             {
-                transform.localScale = new Vector3(1f, 1f, 1f);
+                reachedEndOfPath = true;
+                return;
             }
-            else if (body.velocity.x <= -.1f)
+            else
             {
-                transform.localScale = new Vector3(-1f, 1f, 1f);
+                reachedEndOfPath = false;
             }
-        }else
-        {
-            Vector2 enemyDirection = target.position - gameObject.transform.position;
-            if (enemyDirection.x > 0.1f) { transform.localScale = new Vector3(1f, 1f, 1f); }
-            else if (enemyDirection.x < 0.1f) { transform.localScale = new Vector3(-1f, 1f, 1f); }
+
+            Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - body.position).normalized * intState;
+            Vector2 force = direction * speed * Time.deltaTime;
+
+            body.AddForce(force * 1000);
+
+            float distanceToWaypoint = Vector2.Distance(body.position, path.vectorPath[currentWaypoint]);
+
+            if (distanceToWaypoint < nextWaypointDistance)
+            {
+                currentWaypoint++;
+            }
+            if (state != State.Flee)
+            {
+                if (body.velocity.x >= .1f)
+                {
+                    transform.localScale = new Vector3(1f, 1f, 1f);
+                }
+                else if (body.velocity.x <= -.1f)
+                {
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
+                }
+            }
+            else
+            {
+                Vector2 enemyDirection = target.position - gameObject.transform.position;
+                if (enemyDirection.x > 0.1f) { transform.localScale = new Vector3(1f, 1f, 1f); }
+                else if (enemyDirection.x < 0.1f) { transform.localScale = new Vector3(-1f, 1f, 1f); }
+            }
         }
     }
 
@@ -159,7 +165,7 @@ public class PoliceAI : MonoBehaviour
     {
         Vector2 enemyDirection = target.position - gameObject.transform.position;
         //Debug.DrawRay(gameObject.transform.position, enemyDirection);
-        if (other.CompareTag("Player") && !Physics2D.Raycast(gameObject.transform.position ,enemyDirection,colisionador.radius , obstacles))
+        if (other.CompareTag("Player") && !Physics2D.Raycast(gameObject.transform.position ,enemyDirection,colisionador.radius , obstacles) && !dead)
         {
             intState = -1;
             StartCoroutine(Shoot(other));
@@ -170,7 +176,7 @@ public class PoliceAI : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         Vector2 enemyDirection = target.position - gameObject.transform.position;
-        if (other.CompareTag("Player") && !Physics2D.Raycast(gameObject.transform.position, enemyDirection, colisionador.radius, obstacles))
+        if (other.CompareTag("Player") && !Physics2D.Raycast(gameObject.transform.position, enemyDirection, colisionador.radius, obstacles) && !dead)
         {
             if (timeFromLastShot > shootTime)
                 StartCoroutine(Shoot(other));
@@ -186,6 +192,11 @@ public class PoliceAI : MonoBehaviour
             state = State.Chase;
         }
 
+    }
+
+    public void die()
+    {
+        dead = true;
     }
 
 

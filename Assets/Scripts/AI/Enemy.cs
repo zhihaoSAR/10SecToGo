@@ -50,13 +50,16 @@ public class Enemy : MonoBehaviour
             if (health > 0)
             {
                 Debug.Log("hit");
-                //sprite.color = Color.red;
+                sprite.color = Color.red;
                 anim.SetInteger("Life",anim.GetInteger("Life")-1);
                 StartCoroutine("resetDamegeEffect");
                 StartCoroutine("resetImmune");
             }
             else
             {
+                if (gameObject.GetComponent<PoliceAI>() != null)
+                { gameObject.GetComponent<PoliceAI>().die(); }
+                else { gameObject.GetComponent<CientificoAI>().die(); }
                 death();
             }
         }

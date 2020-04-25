@@ -13,6 +13,7 @@ public class CientificoAI : MonoBehaviour
     public float speed = 200f;
     public float nextWaypointDistance = 1f;
     public float stoppingDistance;
+    private bool dead = false;
 
     Path path;
     int currentWaypoint = 0;
@@ -88,37 +89,40 @@ public class CientificoAI : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (path == null)
-            return;
-        if (currentWaypoint >= path.vectorPath.Count)
+        if (!dead)
         {
-            reachedEndOfPath = true;
-            return;
-        }
-        else
-        {
-            reachedEndOfPath = false;
-        }
+            if (path == null)
+                return;
+            if (currentWaypoint >= path.vectorPath.Count)
+            {
+                reachedEndOfPath = true;
+                return;
+            }
+            else
+            {
+                reachedEndOfPath = false;
+            }
 
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - body.position).normalized * intState;
-        Vector2 force = direction * speed * Time.deltaTime;
+            Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - body.position).normalized * intState;
+            Vector2 force = direction * speed * Time.deltaTime;
 
-        body.AddForce(force*1000);
+            body.AddForce(force * 1000);
 
-        float distanceToWaypoint = Vector2.Distance(body.position, path.vectorPath[currentWaypoint]);
+            float distanceToWaypoint = Vector2.Distance(body.position, path.vectorPath[currentWaypoint]);
 
-        if (distanceToWaypoint < nextWaypointDistance)
-        {
-            currentWaypoint++;
-        }
+            if (distanceToWaypoint < nextWaypointDistance)
+            {
+                currentWaypoint++;
+            }
 
-        if (body.velocity.x >= .1f)
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else if (body.velocity.x <= -.1f)
-        {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            if (body.velocity.x >= .1f)
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f);
+            }
+            else if (body.velocity.x <= -.1f)
+            {
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
         }
     }
 
@@ -134,7 +138,7 @@ public class CientificoAI : MonoBehaviour
     {
         Vector2 enemyDirection = target.position - gameObject.transform.position;
         //Debug.DrawRay(gameObject.transform.position, enemyDirection);
-        if (other.CompareTag("Player") && !Physics2D.Raycast(gameObject.transform.position, enemyDirection, colisionador.radius, obstacles))
+        if (other.CompareTag("Player") && !Physics2D.Raycast(gameObject.transform.position, enemyDirection, colisionador.radius, obstacles) && !dead)
         {
             intState = -1;
             RunAway();
@@ -171,5 +175,10 @@ public class CientificoAI : MonoBehaviour
     {
         float radians = inputAngleDegrees * Mathf.Deg2Rad;
         return new Vector3(Mathf.Cos(radians), Mathf.Sin(radians), 0);
+    }
+
+    public void die()
+    {
+        dead = true;
     }
 }
