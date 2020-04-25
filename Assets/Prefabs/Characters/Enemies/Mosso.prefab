@@ -120,9 +120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  maxHealth: 2
+  maxHealth: 3
   immuneTime: 0.5
   effectTime: 0.1
+  health: 0
   toxic: {fileID: -3581589119061459104, guid: 5534ca5a3815f7141ad08a32c1cdb9a0, type: 3}
   probabilityPowerUp: 1
   powerUp: {fileID: 8042983411520522885, guid: 77eb4577575bc934cae2bc74fde22e89, type: 3}
@@ -254,7 +255,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 162353495
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 4376423736622058684, guid: 7a8223cbb685643f09d93606bb46cceb,
     type: 3}
