@@ -329,7 +329,7 @@ public class Player : MonoBehaviour
                     break;
                 case Effect.PARAR_TIEMPO:
                     controller.activarPararTimepo();
-                    //guimanager.createPowerUp(2, Effect.ZOMBIFICAR);
+                    guimanager.createPowerUp(1, Effect.PARAR_TIEMPO);
                     break;
             }
             Destroy(col.gameObject);
