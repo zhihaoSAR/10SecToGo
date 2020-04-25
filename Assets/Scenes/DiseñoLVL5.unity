@@ -5671,6 +5671,11 @@ PrefabInstance:
       propertyPath: p1
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5585634661257988425, guid: e6404b9a675bfdd4591c41671ae87dab,
+        type: 3}
+      propertyPath: nivel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5585634661257988471, guid: e6404b9a675bfdd4591c41671ae87dab,
         type: 3}
       propertyPath: m_Name
