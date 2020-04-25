@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
+
 
 
 public class SceneController : MonoBehaviour
@@ -28,7 +30,7 @@ public class SceneController : MonoBehaviour
     [HideInInspector]
     public bool explosivo, zombificar,pararTiempo;
     float time_explosivo = 0, time_zombificar = 0,time_pararTiempo = 0;
-
+    public int nivel;
     [HideInInspector]
     public float time;
     //GUI
@@ -93,6 +95,9 @@ public class SceneController : MonoBehaviour
             if(++round > config.MaxRound)
             {
                 Debug.Log("Win");
+                PlayerPrefs.SetInt("nivel",nivel);
+                PlayerPrefs.Save();
+                SceneManager.LoadScene("PruebaPantallaCargaAnimación");
             }
             else
             {
