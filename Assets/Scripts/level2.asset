@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d74221f666090448eadf693ec1a675, type: 3}
   m_Name: level2
   m_EditorClassIdentifier: 
-  MaxRound: 2
+  MaxRound: 5
   Enemies:
   - {fileID: 6236621211851283530, guid: 0c42195b626c13547ab5e02f84262f26, type: 3}
   - {fileID: 2637760643129083716, guid: aa855b4bab9c31f4d94f15a5ebb7840e, type: 3}
@@ -27,6 +27,6 @@ MonoBehaviour:
   - 0.5
   - 0.5
   MaxEnemieNumAtTime: 10
-  InitEnemyNum: 10
-  DeltaEnemies: 5
-  SpawnTime: 0.5
+  InitEnemyNum: 7
+  DeltaEnemies: 2
+  SpawnTime: 1

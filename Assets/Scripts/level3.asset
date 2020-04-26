@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d74221f666090448eadf693ec1a675, type: 3}
   m_Name: level3
   m_EditorClassIdentifier: 
-  MaxRound: 0
+  MaxRound: 5
   Enemies: []
   InitProbability: []
-  MinProbability: 0
+  MinProbability: 40
   DeltaProbability: []
-  MaxEnemieNumAtTime: 0
-  InitEnemyNum: 0
-  DeltaEnemies: 0
-  SpawnTime: 0
+  MaxEnemieNumAtTime: 10
+  InitEnemyNum: 7
+  DeltaEnemies: 2
+  SpawnTime: 1
