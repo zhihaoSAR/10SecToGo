@@ -381,7 +381,7 @@ public class Player : MonoBehaviour
     {
         if(!immune)
         {
-            if (--health > 0)
+            if (--health >= 0)
             {
                 guimanager.UpdateVida(health);
                 immune = true;
@@ -392,7 +392,7 @@ public class Player : MonoBehaviour
             }
             else
             {
-                guimanager.UpdateVida(health);
+                guimanager.UpdateVida(0);
                 death();
             }
         }
