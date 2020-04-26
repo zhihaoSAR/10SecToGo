@@ -24,6 +24,6 @@ MonoBehaviour:
   - 30
   - 1
   MaxEnemieNumAtTime: 10
-  InitEnemyNum: 10
-  DeltaEnemies: 5
-  SpawnTime: 0.5
+  InitEnemyNum: 7
+  DeltaEnemies: 2
+  SpawnTime: 1
