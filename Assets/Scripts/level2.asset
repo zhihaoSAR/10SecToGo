@@ -16,16 +16,13 @@ MonoBehaviour:
   Enemies:
   - {fileID: 6236621211851283530, guid: 0c42195b626c13547ab5e02f84262f26, type: 3}
   - {fileID: 2637760643129083716, guid: aa855b4bab9c31f4d94f15a5ebb7840e, type: 3}
-  - {fileID: 457500022218278829, guid: c3ff3fefe4a3b1f47846fb7edbf5ecb2, type: 3}
   InitProbability:
-  - 70
-  - 30
-  - 0
-  MinProbability: 40
+  - 90
+  - 10
+  MinProbability: 50
   DeltaProbability:
-  - 20
-  - 0.5
-  - 0.5
+  - 8
+  - 1
   MaxEnemieNumAtTime: 10
   InitEnemyNum: 7
   DeltaEnemies: 2

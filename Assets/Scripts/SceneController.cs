@@ -18,7 +18,7 @@ public class SceneController : MonoBehaviour
     int enemiesDead;
     float[] probability;
     int enemyNum;
-
+    public Transform PlayerSpawnPoints;
 
 
     //--------------varibale de modificador---------------------------
@@ -73,7 +73,7 @@ public class SceneController : MonoBehaviour
         pararTiempo = false;
         time_mas_damage = 0;
         damage = 1;
-        player.initSetting();
+        player.initSetting(PlayerSpawnPoints.position);
         
     }
 

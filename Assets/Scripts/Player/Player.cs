@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
     Vector2 min, max;
 
 
-    public void initSetting()
+    public void initSetting(Vector3 initPos)
     {
         time_atk_distancia = 0;
         time_atk_explosive = 0;
@@ -72,6 +72,7 @@ public class Player : MonoBehaviour
         health = 1;
         guimanager = GUI.GetComponent<GUImanager>();
         guimanager.UpdateVida(health);
+        transform.position = initPos;
     }
 
     void Start()

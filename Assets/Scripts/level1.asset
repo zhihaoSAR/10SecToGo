@@ -19,9 +19,9 @@ MonoBehaviour:
   InitProbability:
   - 100
   - 0
-  MinProbability: 40
+  MinProbability: 90
   DeltaProbability:
-  - 30
+  - 2
   - 1
   MaxEnemieNumAtTime: 10
   InitEnemyNum: 7

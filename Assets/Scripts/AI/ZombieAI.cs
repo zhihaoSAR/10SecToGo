@@ -126,13 +126,13 @@ public class ZombieAI : MonoBehaviour
             }
         }
     }
-
+    /*
     private void OnDrawGizmos()
     {
         UnityEditor.Handles.color = Color.blue;
         UnityEditor.Handles.DrawWireDisc(GFX.position, Vector3.back, stoppingDistance);
         //UnityEditor.Handles.DrawWireDisc(path.vectorPath[currentWaypoint], Vector3.back, 0.1f);
-    }
+    }*/
 
     private void OnTriggerEnter2D(Collider2D other)
     {
