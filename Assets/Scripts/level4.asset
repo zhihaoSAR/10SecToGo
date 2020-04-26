@@ -13,10 +13,19 @@ MonoBehaviour:
   m_Name: level4
   m_EditorClassIdentifier: 
   MaxRound: 5
-  Enemies: []
-  InitProbability: []
+  Enemies:
+  - {fileID: 6236621211851283530, guid: 0c42195b626c13547ab5e02f84262f26, type: 3}
+  - {fileID: 2637760643129083716, guid: aa855b4bab9c31f4d94f15a5ebb7840e, type: 3}
+  - {fileID: 5647608381043505566, guid: 84d437acd8ff2b44f8046c62b4e38076, type: 3}
+  InitProbability:
+  - 80
+  - 20
+  - 0
   MinProbability: 40
-  DeltaProbability: []
+  DeltaProbability:
+  - 8
+  - 0.5
+  - 0.5
   MaxEnemieNumAtTime: 10
   InitEnemyNum: 7
   DeltaEnemies: 2

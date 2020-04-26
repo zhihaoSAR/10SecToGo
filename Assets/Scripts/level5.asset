@@ -13,10 +13,22 @@ MonoBehaviour:
   m_Name: level5
   m_EditorClassIdentifier: 
   MaxRound: 5
-  Enemies: []
-  InitProbability: []
-  MinProbability: 40
-  DeltaProbability: []
+  Enemies:
+  - {fileID: 6236621211851283530, guid: 0c42195b626c13547ab5e02f84262f26, type: 3}
+  - {fileID: 2637760643129083716, guid: aa855b4bab9c31f4d94f15a5ebb7840e, type: 3}
+  - {fileID: 457500022218278829, guid: c3ff3fefe4a3b1f47846fb7edbf5ecb2, type: 3}
+  - {fileID: 5647608381043505566, guid: 84d437acd8ff2b44f8046c62b4e38076, type: 3}
+  InitProbability:
+  - 70
+  - 10
+  - 10
+  - 10
+  MinProbability: 30
+  DeltaProbability:
+  - 8
+  - 0.7
+  - 0.2
+  - 0.1
   MaxEnemieNumAtTime: 10
   InitEnemyNum: 7
   DeltaEnemies: 2

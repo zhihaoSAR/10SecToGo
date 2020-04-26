@@ -70,8 +70,10 @@ MonoBehaviour:
   maxHealth: 1
   immuneTime: 0.5
   effectTime: 0.1
+  health: 0
   toxic: {fileID: -3581589119061459104, guid: 5534ca5a3815f7141ad08a32c1cdb9a0, type: 3}
-  probabilityPowerUp: 0
+  probabilityPowerUp: 0.1
+  powerUp: {fileID: 8042983411520522885, guid: 77eb4577575bc934cae2bc74fde22e89, type: 3}
 --- !u!50 &6236621211851283531
 Rigidbody2D:
   serializedVersion: 4
@@ -251,7 +253,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 162353495
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 2182610492912128367, guid: 3d6da2960b8aa49fb93c87182d008fe2,
     type: 3}
