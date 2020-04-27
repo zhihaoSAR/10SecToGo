@@ -24,8 +24,8 @@ MonoBehaviour:
   MinProbability: 40
   DeltaProbability:
   - 8
-  - 0.5
-  - 0.5
+  - 0.8
+  - 0.2
   MaxEnemieNumAtTime: 10
   InitEnemyNum: 7
   DeltaEnemies: 2

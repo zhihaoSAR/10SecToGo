@@ -86,6 +86,11 @@ public class SceneController : MonoBehaviour
             //Debug.Log(time);
             player.death();
         }
+        if (Input.GetKey(KeyCode.T))
+        {
+            time = 999;
+
+        }
     }
     public void EnemyDead(float increase)
     {
